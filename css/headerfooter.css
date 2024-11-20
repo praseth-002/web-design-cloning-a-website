@@ -41,22 +41,25 @@ header > img {
     margin: 0 2em;
 }
 
-.content > img {
+/* .content > img {
     object-position: 50% 50%;
     width: 100%;
     height: auto;
-}
+} */
 
 footer {
     padding: 40px;
-    margin: 0 25%;
+    margin: 0 auto;
     background-color: #151515;
     color: #7a7a7a;
     font-size: 10pt;
+    /* width: 100%; */
+    text-wrap: wrap;
 }
 
 footer > a {
     color: #c8c7c7;
+
 }
 
 footer > div {
@@ -69,10 +72,12 @@ footer > div {
     align-items: flex-start;
     gap: 1em;
     border-top: 0.01px solid #7a7a7a;
+    flex-wrap: wrap;
 }
 
 footer > div > button {
     background-color: #151515;
+    min-width: 120px;
     border: none;
     color: #7a7a7a;
     font-size: 10pt;
