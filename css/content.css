@@ -115,14 +115,22 @@ footer > div > button {
     align-items: center;  
 }
 
-.left-right {
+.angle-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-right: 0.5rem;
+}
+
+.angle-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 0.5rem;
 }
 
-.left-right i {
-    width: 24px;
-    height: 24px;
+.blank-space {
+    height: 86.4px;
 }
 
 .video-slidder {
@@ -166,9 +174,27 @@ footer > div > button {
     font-size: 0.75rem; 
 }
 
-.comment {
+.description {
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.description p {
+    width: 100%; 
+    line-height: 1.5em; 
+    max-height: 3em; 
+    overflow: hidden; 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
+}
+
+.comment-container {
     display: flex;
-    flex-direction: row;
+    margin-top: 6px;
+    font-size: 12px;
     align-items: center;
-   
+    gap: 8px;
 }
