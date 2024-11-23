@@ -131,6 +131,11 @@ html {
     background-color: #151515;
     color: white;
     font-size: larger;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-tab button:hover{
+    transform: scale(1.05);
 }
 
 .shop-item-container{
@@ -143,8 +148,11 @@ html {
     padding: 0px;
     margin: 0 auto;
     justify-content: center;
+    
+    }
+    
 
-}
+
 
 .shop-item{
     width: 225px;
@@ -174,6 +182,11 @@ font-size: 10px;
 p{
     color: white;
 }
+
+#photobook {
+    scroll-margin-top: 1000px;
+}
+
 
 
 
