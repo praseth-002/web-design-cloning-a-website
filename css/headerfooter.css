@@ -41,6 +41,11 @@ header > button {
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 header > img {
     width: 66px;
     height: 17px;
