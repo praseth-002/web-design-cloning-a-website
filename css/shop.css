@@ -110,7 +110,7 @@ a{
     color: white;
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:inherit;
 }
 
 
@@ -131,11 +131,17 @@ html {
     background-color: #151515;
     color: white;
     font-size: larger;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:  transform 0.3s ease, box-shadow 0.3s ease;
 }
+.shop-tab button:active {
+    text-decoration: underline;
+}
+
+
 
 .shop-tab button:hover{
     transform: scale(1.05);
+
 }
 
 .shop-item-container{
@@ -183,9 +189,7 @@ p{
     color: white;
 }
 
-#photobook {
-    scroll-margin-top: 1000px;
-}
+
 
 
 
