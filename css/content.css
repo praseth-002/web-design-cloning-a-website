@@ -12,12 +12,13 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
 }
 
 .content {
     min-height: 50vh;
+    margin-bottom: 60px;
 }
 
 header {
@@ -162,8 +163,8 @@ footer > div > button {
 .content-thumbnails {
     position: relative; 
     overflow: hidden;
-    width: 12rem;
-    height: 6.75rem;
+    width: 15.5rem;
+    height: 8.71875rem;
 }
 
 .content-thumbnails img , .purple {
@@ -203,27 +204,41 @@ footer > div > button {
 
 .description {
     margin-top: 16px;
-    font-size: 12px;
-    width: 12rem;
+    font-size: 14px;
+    width: 15.5rem;
 }
 
 .description p {
     width: 100%; 
     line-height: 1.5em; 
-    height: 2rem;
+    height: 2.5rem;
     overflow: hidden; 
     display: -webkit-box; 
     -webkit-box-orient: vertical; 
     -webkit-line-clamp: 2;
     text-overflow: ellipsis; 
     white-space: normal; 
-    word-break: break-all;
+    word-break: keep-all;
 }
 
 .comment-container {
+    color: gray;
+    font-size: 12px;
     display: flex;
     margin-top: 6px;
-    font-size: 12px;
     align-items: center;
     gap: 8px;
+}
+
+.comment-container p {
+    width: 100%;
+    line-height: 1.5em; 
+    height: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-break: break-all;
 }
