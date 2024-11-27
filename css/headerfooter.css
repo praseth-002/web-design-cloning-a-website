@@ -1,39 +1,65 @@
 * {
     margin: 0;
     padding: 0;
+    /* overflow: hidden; */
     box-sizing: border-box;
   }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #151515;
+    height: 100vh;
 }
 
-.container {
+/* old content container (my bad bru for setting the container to 70%) */
+/* .container {
     width: 70%;
     margin: 0 auto;
 }
 
 .content {
     min-height: 50vh;
+} */
+
+/* new more responsive content container */
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
 }
 
-header {
+.content {
+    max-width: 1080px;
+    padding: 0 32px;
+    margin: 0 auto;
+    /* min-height: 52.5vh; */
+}
+
+/* .container > img {
     width: 100%;
+    height: auto;
+} */
+
+header {
+    width: 100vw;
+}
+
+header > div{
+    max-width: 1080px;
     height: 68px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     background-color: #151515;
-    margin: auto;
+    margin: 0 auto;
     padding: 8px 0;
     top: 0;
     position: sticky;
     z-index: 100;
 }
 
-header > button {
+header > div > button {
     border: none;
     padding: 10px 8px;
     background-color: #151515;
@@ -41,57 +67,16 @@ header > button {
     font-weight: bold;
 }
 
-a{
+header > div > button > a{
     text-decoration: none;
     color: white;
 }
 
-header > img {
+header > div > img {
     width: 66px;
     height: 18px;
     margin: 0 2em;
 }
-
-/* .content > img {
-    object-position: 50% 50%;
-    width: 100%;
-    height: auto;
-} */
-
-/* footer {
-    padding: 40px 32px 36px 32px;
-    margin: 0 auto;
-    background-color: #111111;
-    color: #7a7a7a;
-    font-size: 10pt;
-    text-wrap: wrap;
-}
-
-footer > a {
-    color: #c8c7c7;
-
-}
-
-footer > div:first-of-type {
-    padding: 40px;
-    margin: 20px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1em;
-    border-top: 0.01px solid #ffffff0a;
-    flex-wrap: wrap;
-}
-
-footer > div > button {
-    background-color: #111111;
-    min-width: 120px;
-    border: none;
-    color: #7a7a7a;
-    font-size: 10pt;
-} */
 
 footer {
     margin-top: 48px;
@@ -100,12 +85,18 @@ footer {
     font-size: 13px;
 }
 
-.footercontact {
+footer > div:first-child {
     padding: 40px 32px 36px 32px;
-    /* margin: 0 5vw 16px 5vw; */
+    margin: 0 auto;
+    max-width: 1080px;
+    border-bottom: 1px solid #ffffff0a;
+}
+
+.footercontact {
+    margin: 0 auto;
     margin-bottom: 15px;
     color: #7a7a7a;
-    border-bottom: 1px solid #ffffff0a;
+    max-width: 1016px;
     
 }
 
@@ -144,42 +135,37 @@ footer {
     display: none;
 }
 
-.mobile-nav > div {
+
+
+.totop > a{
+    width: 48px;
+    height: 48px;
+
+    position: fixed;
+    left: 90vw;
+    bottom:10vh;
+    background-color: #000000;
+    border-radius: 50px;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 2;
-    height: 58px;
+
 }
 
-.mobile-nav > div > svg {
-    max-width: 24px;
-    max-height: 24px;
-}
-
-.top {
-    margin-left: auto;
-    position: fixed;
-    bottom:500px;
-    background-color: white;
-    border-radius: 50px;
+.totop > a > svg {
+    width: 24px;
+    height: 24px;
+    color: #c8c7c7;
 }
 
 @media only screen and (max-width: 800px) {
-    .container {
-        width: 100vw;
-    }
 
-    /* header {
-        display:none;
-    } */
-
-    header > button {
+    header > div > button {
         display: none;
     }
 
-    .footercontact {
+    footer > div:first-child {
         padding: 40px 16px 16px 16px;
     }
 
@@ -188,7 +174,6 @@ footer {
     }
 
     .mobile-nav {
-        /* width: calc(100% - 32px); */
         width: 100vw;
         display: flex;
         justify-content: space-between;
@@ -199,6 +184,19 @@ footer {
         color: #7a7a7a;
         font-size: 10px;
         border-top: 1px solid #ffffff0a;
-        /* font-weight: bold; */
+    }
+
+    .mobile-nav > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 2;
+        height: 58px;
+    }
+    
+    .mobile-nav > div > svg {
+        max-width: 24px;
+        max-height: 24px;
     }
 }
