@@ -11,7 +11,7 @@ body {
     box-sizing: border-box;
 }
 
-.container {
+/* .container {
     width: 85%;
     margin: 0 auto;
 }
@@ -19,6 +19,18 @@ body {
 .content {
     min-height: 50vh;
     margin-bottom: 60px;
+} */
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 1080px;
+    padding: 0 32px;
+    margin: 0 auto;
+    /* min-height: 52.5vh; */
 }
 
 header {

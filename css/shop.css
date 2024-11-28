@@ -11,13 +11,25 @@ body {
     width: 100vw;
 }
 
-.container {
+/* .container {
     width: 70%;
     margin: 0 auto;
 }
 
 .content {
     min-height: 50vh;
+} */
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 1080px;
+    padding: 0 32px;
+    margin: 0 auto;
+    /* min-height: 52.5vh; */
 }
 
 header {
