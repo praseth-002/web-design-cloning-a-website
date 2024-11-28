@@ -8,6 +8,7 @@ body {
   grid-template-columns: auto auto;
   margin-top: 10px;
   gap: 20px;
+  
 }
 .Side-bar {
   display: flex;
