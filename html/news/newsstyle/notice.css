@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;  
+     
+}
+.container{
+    color: white;
+    font-family: Arial, sans-serif;
+    flex: 1 1;
+    
+    
+}
+
+.container-pinned{
+    
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #070505;
+    box-shadow: #333;
+    margin-top: 10px; 
+}
+.head-pinned{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    
+}
+.pinned-left{
+    padding-left: 30px;
+}
+.pinned-right{
+    padding-right: 20px;
+}
+.main-pinned{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+    
+}
+.element-pinned{
+    display: grid;
+    grid-template-columns: auto 100px ;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.text-element-left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.text-element-right{
+    padding-right: 10px;
+}
+.right-four{
+    color: orangered;
+}
+.viewpost-container{
+    display: grid;
+    grid-template-columns: auto 40px 1px 40px;
+    gap: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.viewpost{
+    color: #e7e1e1a7;
+}
+button{
+    border: none; /* Removes the border */
+    outline: none; /* Ensures there's no outline when focused */
+    background: transparent;
+}
+button i{
+    color: rgba(255, 255, 255, 0.856);
+    padding-right: 5px;
+}
+
