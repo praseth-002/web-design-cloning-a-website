@@ -131,6 +131,65 @@ button i{
     display: flex;
     flex-direction: row;
     gap: 15px;
+    color: rgba(255, 255, 255, 0.329);
+}
+.oned{
+    padding-top: 4px;
+}
+.reaction{
+    padding-top: 4px;
+}
+.comment{
+    padding-top: 4px;
+}
+.emoji-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+   
+}
+.emoji{
+    display: flex;
+    flex-wrap:wrap;
+}
+  .reaction-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #333; /* Dark button background */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+  }
+  .emoji-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px; /* Space between emoji and count */
+  }
+
+  .reaction-count {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .fa-face-smile-beam{
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  .reaction{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.comment{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 .footerOfNotice{
     position: relative;
