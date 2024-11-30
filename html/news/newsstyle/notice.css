@@ -6,9 +6,7 @@ body{
 .container{
     color: white;
     font-family: Arial, sans-serif;
-    flex: 1 1;
-    
-    
+    flex: 1 1;  
 }
 
 .container-pinned{
@@ -79,4 +77,91 @@ button i{
     color: rgba(255, 255, 255, 0.856);
     padding-right: 5px;
 }
+.containerOfli{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.S2header{
+    display: grid;
+    grid-template-columns: auto 30px;
+    margin-top: 30px;
+    
+}
+.S2logo{
+    display: flex;
+    flex-direction: row;
+}
+.headerName{
+    display: flex;
+    margin-left: 10px;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+   
+}
+.namepf{
+    padding-top: 15px;
+    font-weight: bold;
+}
+.headerdiv{
+    padding-top: 10px;
+} 
+.headerManager{
+    width: 60px;
+    height: 15px;
+    padding: 5px 5px; /* Adds space inside the button */
+      border: 1px solid gray; /* Gray border */
+      border-radius: 50px; /* Rounded corners */
+      background-color: #7c7b7b7f; /* Light gray background */
+      color: #ece7e7a7; /* Text color */
+      font-size: 12px; /* Font size for the text */
+      text-align: center; /* Centers the text */
+      display: inline-block; 
+    
+}
+.S2four{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+}
+.S2fourdayreactcomment{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.footerOfNotice{
+    position: relative;
+    width: 100%;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+ul{
+    list-style: none;
+}
+.S2fourtextt{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.logopic1{
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    border: 2px solid #333; /* Optional border for styling */
+  }
 
+  .logopic1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image fits nicely */
+  }
