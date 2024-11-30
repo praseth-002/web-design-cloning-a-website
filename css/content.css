@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 /* a{
     text-decoration: none;
     color: white;
     cursor: pointer;
 } */
 
+=======
+>>>>>>> c36c9fe779e5a16b3d0746c548a9cc418c3d540a
 .content-video-banner {
     height: calc(100vh - 250px);
     background-color: palevioletred;
