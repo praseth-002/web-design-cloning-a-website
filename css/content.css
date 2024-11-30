@@ -1,3 +1,8 @@
+/* a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+} */
 
 .content-video-banner {
     height: calc(100vh - 250px);
