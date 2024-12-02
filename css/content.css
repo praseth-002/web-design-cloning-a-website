@@ -1,97 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #151515;
-    color: white;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.content {
-    min-height: 50vh;
-    margin-bottom: 60px;
-}
-
-header {
-    width: 100%;
-    height: 68px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #151515;
-    margin: auto;
-    padding: 8px 0;
-    top: 0;
-    position: sticky;
-    z-index: 100;
-}
-
-header > button {
-    border: none;
-    padding: 10px 8px;
-    background-color: #151515;
-    color: white;
-    font-weight: bold;
-}
-
-header > button .not-current {
-    color: gray;
-}
-
 a{
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
 
-header > img {
-    width: 66px;
-    height: 17px;
-    margin: 0 2em;
-}
-
-footer {
-    padding: 40px;
-    margin: 0 auto;
-    background-color: #151515;
-    color: #7a7a7a;
-    font-size: 10pt;
-    text-wrap: wrap;
-}
-
-footer > a {
-    color: #c8c7c7;
-}
-
-footer > div {
-    padding: 40px;
-    margin: 20px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1em;
-    border-top: 0.01px solid #7a7a7a;
-    flex-wrap: wrap;
-}
-
-footer > div > button {
-    background-color: #151515;
-    min-width: 120px;
-    border: none;
-    color: #7a7a7a;
-    font-size: 10pt;
+h3 {
+    color: white;
 }
 
 .content-video-banner {
@@ -130,6 +44,7 @@ footer > div > button {
     flex-direction: column;
     align-items: center;
     padding-right: 0.5rem;
+    color: white;
 }
 
 .angle-right {
@@ -137,6 +52,7 @@ footer > div > button {
     flex-direction: column;
     align-items: center;
     padding-left: 0.5rem;
+    color: white;
 }
 
 .blank-space {
@@ -158,6 +74,7 @@ footer > div > button {
 .mini-video {
     display: flex; 
     flex-direction: column;
+    height: auto;
 }
 
 .content-thumbnails {
@@ -187,6 +104,17 @@ footer > div > button {
     font-size: 10px; 
 }
 
+.survey {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 50px; 
+    font-size: 10px; 
+}
+
 .diamond {
     display: flex;
     position: absolute;
@@ -200,6 +128,7 @@ footer > div > button {
     height: 1.75rem;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
 }
 
 .description {
