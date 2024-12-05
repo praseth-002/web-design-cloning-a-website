@@ -173,6 +173,10 @@ footer > div:first-child {
         display: none;
     }
 
+    .content {
+        padding: 0 16px;
+    }
+
     footer > div:first-child {
         padding: 40px 16px 16px 16px;
     }
