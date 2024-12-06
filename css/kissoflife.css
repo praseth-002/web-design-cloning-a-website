@@ -121,14 +121,15 @@ footer > div > button {
     display: flex;
     flex-direction: column;
     width: 34%;
+    height: 100vh;
     margin-top: 0px;
     position: sticky;
     top: 60px;
     height: fit-content;
-    margin-right: 50px;
+    margin: 35px 50px 0 25px;
 }
 
-.member, .current-member {
+.member, .current-member, .profile-comment {
     padding: 8px;
     height: 56px;
     font-size: 12px;
@@ -137,44 +138,26 @@ footer > div > button {
     margin-right: 10px;
 }
 
-.member-profile {
+.member-profile, .small-profile, .current-member {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.member-profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 1.5rem;
-}
-
-.kiof-details a, .text-kiof a{
-    color: pink;
-    text-decoration: underline;
-}
-
-/* .kiof-details {
-    margin-left: 100px;
-} */
-
-.text-kiof {
-    padding: 20px 0;
-}
-
-.member-details, .kiof-details{
-    width: 100%;
-    overflow: hidden; 
-}
-
-.member:hover {
-    background-color: #444; 
-}
-
 .current-member {
+    background-color: #393939;
+}
+
+.current-member p {
     color: palevioletred;
-    text-decoration: underline;
+}
+
+.member-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    align-items: center;
 }
 
 .member-profile a {
@@ -183,24 +166,199 @@ footer > div > button {
     align-items: center;
 }
 
-.member-picture img{
-    width: 375px;
-    height: 450px;
+.right-bar {
+    width: 35vw;
+    margin: 0 50px;
 }
 
-.member-picture {
-    display: flex; 
-    overflow-x: auto; 
-    overflow-y: hidden;
-    scroll-behavior: smooth; 
-    gap: 10px; 
-    padding: 10px; 
-    border: 1px solid #ddd; 
-}
-.member-picture img {
-    flex-shrink: 0;
-    border-radius: 5px; 
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.upper-right {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verified {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.verified img {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    margin-top: px;
+}
+
+.three-dots i {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: end;
+}
+
+.membership-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+}
+
+.membership-content i, .membership-content p {
+    display: flex;
+    justify-content: center;  
+}
+
+.membership-content i {
+    display: flex;
+    margin: 150px 0 0 0;
+}
+
+.membership-content p {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.social-image {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin: 0 75px;
+    gap: 75px;
+}
+
+.social-image img {
+    background-color: black;
+    width: 100%; 
+    height: 100vh;  
+    object-fit: cover; 
+    justify-items: center;
+}
+
+.update-social {
+    overflow-y: auto; 
+    height: 100vh;
+    scroll-snap-type: y mandatory; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    background-color: #222121; 
+    object-fit: contain;
+    margin: auto;
+    width: 100%;
+}
+.update-social::-webkit-scrollbar {
+    display: none; 
+}
+
+.social-image img {
+    scroll-snap-align: start; 
+}
+
+.dots {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.right-bar-text p {
+    font-size: 12px;
+}
+
+.right-bar-date {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reaction i , .comment i{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.reaction, .comment {
+    display: flex;
+    flex-direction: row;
+}
+
+.reaction p, .comment p {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.profile-comment {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 10px;
+}
+
+.small-profile {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+ 
+.small-profile img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.small-profile-text {
+    margin-top: 12.5px;
+}
+
+.emoji-reaction {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 2;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.emoji img {
+    width: 25px;
+    height: 25px;
+}
+
+.emoji {
+    background-color: #393939;
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    padding-top: 3px;
+}
 

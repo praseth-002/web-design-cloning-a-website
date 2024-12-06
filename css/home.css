@@ -1,0 +1,48 @@
+.content > div {
+    padding: 16px 0;
+}
+
+.memcontainer > p {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.members {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 24px;
+}
+
+.members > div {
+    flex-grow: 1;
+    max-width: 236px;
+    max-height: 316px;
+    overflow-y: hidden;
+}
+
+.members > div > a{
+    
+}
+
+.members > div > a > img {
+    width: 100%;
+    height: auto;
+    /* max-height: 315px;
+    max-width: 235px; */
+    /* overflow-y: hidden; */
+}
+
+.members > div > p {
+    color: white;
+    font-weight: bold;
+    padding-top: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.music > p {
+    font-weight: bold;
+    color: white;
+    padding-bottom: 16px;
+}
