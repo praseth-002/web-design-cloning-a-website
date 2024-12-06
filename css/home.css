@@ -1,5 +1,63 @@
-.content > div {
-    padding: 16px 0;
+/* .body {
+    overflow-x: hidden;
+} */
+
+.bigimage {
+    position: relative;
+    /* max-width: 1080px; */
+    /* margin: 0 auto; */
+
+}
+
+.bigimage > img {
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+
+.gomidpls {
+    position: relative;
+    z-index: 1;
+    max-width: 1080px;
+    padding: 0 32px;
+    margin: 0 auto;
+    /* background-color: white; */
+    top:-120px;
+
+    
+}
+
+.txtover {
+    color: #ffffffba;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.txtover > img {
+    width: 180px;
+    height: 50px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.socials > div {
+    margin: 0 6px;
+}
+
+.socials > div > a > svg {
+    max-width: 24px;
+    max-height: 24px;
+    fill: #ffffffba;
+}
+
+.memcontainer {
+    padding-top: 16px;
+    padding-bottom: 52px;
 }
 
 .memcontainer > p {
@@ -10,35 +68,29 @@
 
 .members {
     display: flex;
-    /* justify-content: space-between; */
     gap: 24px;
+    /* gap: 12px; for small */
 }
 
 .members > div {
     flex-grow: 1;
     max-width: 236px;
     max-height: 316px;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
-.members > div > a{
-    
-}
 
 .members > div > a > img {
     width: 100%;
-    height: auto;
-    /* max-height: 315px;
-    max-width: 235px; */
-    /* overflow-y: hidden; */
+    height: 100%;
+    object-fit: cover;
 }
 
 .members > div > p {
     color: white;
     font-weight: bold;
     padding-top: 16px;
-    position: relative;
-    z-index: 2;
+    margin-bottom: 16px;
 }
 
 .music > p {
