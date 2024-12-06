@@ -1,0 +1,145 @@
+
+.item-left-container{
+    width: 50vw;
+    overflow: hidden;
+}
+
+.item-left-container img{
+    width: 500px;
+}
+
+.item-detail-container{
+    display: flex;
+    gap: 10px;
+}
+
+.item-right-container{
+    width: 50vw;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.item-title{
+color:white;
+margin: 10px;
+margin-left: 15px;
+}
+
+.item-price{
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.after-pay{
+    color:lightgray;
+    font-size: smaller;
+    font-weight: lighter;
+    margin-top: 15px;
+    display: flex;
+}
+
+.after-pay img{
+    width: 50px;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-bottom:10px;
+}
+
+.version-box{
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.version-box >button{
+    all: unset; 
+    padding: 5px 20px; 
+    border: 1px solid white; 
+    cursor: pointer; 
+    text-align: center; 
+    font-size: smaller;
+}
+
+.quantity{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+}
+
+.num{
+    width: 10px;
+    border-bottom:1px solid white;
+    border-top:1px solid white;
+}
+.sub ,.add{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.num >p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.add2cart-container{
+    display: flex;
+    gap: 20px;
+}
+
+.add2cart-container >button {
+    all:unset;
+    cursor: pointer;
+    padding: 20px 40px;
+    background-color: rgb(253, 4, 83);
+    font-weight: bold;
+    transition:color 0.3s ease ;
+}
+.add2cart-container >button:hover{
+    color: black;
+}
+.price{
+    opacity: 50%;
+    font-weight: bolder;
+}
+
+.heart-button{
+    background-color:#151515 ;
+    border: 2px solid #ff416c;
+    border-radius: 12px; 
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px; 
+    transition: all 0.3s ease;
+}
+.heart-button >span{
+    color: #ff416c;
+    font-size: 50px;
+}
+
+.heart-button :hover{
+    transform: scale(1.05);
+}
+
+.desciption{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+.img-container {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom :50px;
+}
+
+
+.img-container img{
+    width: 100%;
+    
+}
