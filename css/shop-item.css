@@ -50,6 +50,7 @@ margin-left: 15px;
     margin-top: 15px;
     gap: 20px;
     flex-wrap: wrap;
+    transition: all 0.3s ease;
 }
 
 .version-box >button{
@@ -60,6 +61,12 @@ margin-left: 15px;
     text-align: center; 
     font-size: smaller;
 }
+.version-box :hover{
+color: black;
+background-color: white;
+}
+
+
 
 .quantity{
     margin: 20px;
@@ -138,15 +145,10 @@ margin-left: 15px;
     margin-top: 50px;
     margin-bottom :50px;
 }
-
-
 .img-container img{
     width: 100%;
     
 }
-
-
-
 
 @media(max-width:1024px){
     .item-detail-container{
@@ -185,13 +187,13 @@ margin-left: 15px;
 }
 
 .item-right-container{
-    width: 100vw;
+    width: 100%;
 }
 }
 
 @media (max-width: 768px) {
     .item-right-container{
-        width: 100vw;
+        width: 100%;
         display:flex;
         justify-content: center;
         margin: 10px;
@@ -204,7 +206,7 @@ margin-left: 15px;
 
 @media (max-width: 720px) {
     .item-right-container{
-        width: 100vw;
+        width: 100%;
         display:flex;
         justify-content: center;
         
@@ -213,7 +215,7 @@ margin-left: 15px;
 
 @media (max-width: 635px) {
     .item-right-container{
-        width: 100vw;
+        width: 100%;
         display:flex;
         justify-content: center;
         margin: 10px;
@@ -224,7 +226,7 @@ margin-left: 15px;
 
 @media (max-width: 480px) {
     .item-right-container{
-        width: 100vw;
+        width: 100%;
         display:flex;
         justify-content: center;
         margin: 10px;
@@ -235,7 +237,7 @@ margin-left: 15px;
 
 @media (max-width: 430px) {
     .item-right-container{
-        width: calc(100vw - 32px);
+        width: calc(100% - 32px);
         display:flex;
         justify-content: center;
         margin: 10px;

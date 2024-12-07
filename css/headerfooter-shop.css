@@ -3,8 +3,7 @@
     padding: 0;
     /* overflow: hidden; */
     box-sizing: border-box;
-    scrollbar-color: #ffffffba transparent; 
-  }
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -32,7 +31,7 @@ body {
 
 .content {
     max-width: 1080px;
-    padding: 0 32px;
+    padding: 0 30px;
     margin: 0 auto;
     min-height: 90vh;
 }
@@ -177,7 +176,7 @@ footer > div:first-child {
     }
 
     .content {
-        padding: 0 16px;
+        padding: 0px;
     }
 
     footer > div:first-child {
