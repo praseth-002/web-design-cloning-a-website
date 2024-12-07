@@ -3,6 +3,7 @@
     padding: 0;
     /* overflow: hidden; */
     box-sizing: border-box;
+    scrollbar-color: #ffffffba transparent; 
   }
 
 body {
