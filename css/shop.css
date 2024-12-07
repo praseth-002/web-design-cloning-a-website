@@ -16,11 +16,11 @@
 .shop-home-feed{
     display: flex;
     padding: 10px;
+    cursor: pointer;
 }
 
 .product-list{
     display: grid;
-    grid-template-rows:minmax();
 }
 
 .product-info{
@@ -60,6 +60,7 @@
     padding: 5px;
     font-weight: bold;
     margin-top: 5px;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
