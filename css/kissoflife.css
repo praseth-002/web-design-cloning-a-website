@@ -124,7 +124,7 @@ footer > div > button {
     height: 100vh;
     margin-top: 0px;
     position: sticky;
-    top: 60px;
+    top: 70px;
     height: fit-content;
     margin: 35px 50px 0 25px;
 }
@@ -263,6 +263,7 @@ footer > div > button {
 }
 .update-social::-webkit-scrollbar {
     display: none; 
+    scroll-behavior: smooth;
 }
 
 .social-image img {
@@ -439,6 +440,13 @@ footer > div > button {
 
 .fan-comment p {
     color: grey;
+}
+
+.viewmore p {
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 
