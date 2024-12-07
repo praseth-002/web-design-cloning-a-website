@@ -203,6 +203,7 @@ footer > div:first-child {
         color: #7a7a7a;
         font-size: 10px;
         border-top: 1px solid #ffffff0a;
+        z-index: 3
     }
 
     .mobile-nav > div{
