@@ -4,9 +4,6 @@
 
 .bgimage {
     position: relative;
-    /* max-width: 1080px; */
-    /* margin: 0 auto; */
-
 }
 
 .bgimage > img {
@@ -25,7 +22,6 @@
     max-width: 1080px;
     padding: 0 32px;
     margin: 0 auto;
-    /* top:-190px; */
 }
 
 .txtover {
@@ -176,5 +172,15 @@
 
     .smolimg {
         display: block;
+    }
+
+    .txtover {
+        bottom: 256px;
+        left: calc(50% - 171.735px);
+        align-items: center;
+    }
+
+    .txtover > p {
+        text-align: center;
     }
 }

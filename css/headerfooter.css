@@ -27,7 +27,7 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    margin-top: 68px;
+    margin-top: 72px;
 }
 
 .content {
@@ -36,11 +36,6 @@ body {
     margin: 0 auto;
     min-height: 90vh;
 }
-
-/* .container > img {
-    width: 100%;
-    height: auto;
-} */
 
 header {
     top: 0;
@@ -53,7 +48,7 @@ header {
 
 header > div{
     max-width: 1080px;
-    height: 68px;
+    height: 72px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -172,6 +167,15 @@ footer > div:first-child {
     body{
         width: 100vw;
     }
+
+    .container {
+        margin-top: 48px;
+    }
+
+    header > div {
+        height: 48px;
+    }
+
     header > div > button {
         display: none;
     }
