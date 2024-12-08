@@ -184,7 +184,7 @@
     }
 
     .txtover {
-        bottom: 5vh;
+        top: 24px;
         left: calc(50% - 171.735px);
         align-items: center;
     }
