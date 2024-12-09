@@ -124,7 +124,7 @@ footer > div > button {
     height: 100vh;
     margin-top: 0px;
     position: sticky;
-    top: 60px;
+    top: 70px;
     height: fit-content;
     margin: 35px 50px 0 25px;
 }
@@ -263,6 +263,7 @@ footer > div > button {
 }
 .update-social::-webkit-scrollbar {
     display: none; 
+    scroll-behavior: smooth;
 }
 
 .social-image img {
@@ -415,7 +416,7 @@ footer > div > button {
     margin-bottom: 10px;
 }
 
-.star-img img {
+.star-img img, .fan-profile img {
     margin-top: 5px;
     width: 20px;
     height: 20px;
@@ -437,9 +438,115 @@ footer > div > button {
     margin-left: 20px;
 }
 
-.fan-comment p {
+.fan-comment-text p {
+    color: grey;
+    margin-top: 10px;
+}
+
+.viewmore p {
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    background-color: #222121;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.login-icon i {
+    width: 20px;
+    height: 20px;
     color: grey;
 }
 
+.login-text p {
+    color: grey;
+}
 
- 
+.login-icon, .login-text {
+    margin: 15px 0;
+    margin-left: 15px;
+} 
+
+.fan-profile-items img {
+    border-radius: 50%;
+}
+
+.fan-profile {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.fan-profile p  {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.fan-text p {
+    color: grey;
+}
+
+.interaction-fan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.fan-comment p {
+    color: grey;
+    font-size: 12px;
+}
+
+.fan-profile-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.emoji2 {
+   background-color: grey;
+   width: 40px;
+   height: 25px;
+   display: flex;
+   justify-content: center;
+   margin-top: 5px;
+   border-radius: 10px;
+   margin-left: 35px;
+}
+
+.emoji2 img {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-top: 3px;
+}
+
+@media (max-width: 1024px) { 
+    .right-bar {
+        width: 40vw;
+        margin: 0 50px;
+    }
+
+    .emoji-reaction {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 3;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+   
+}
