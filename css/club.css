@@ -1,0 +1,13 @@
+.product-thumnail-banner{
+    width: 100%;
+    height: auto;
+}
+
+.product-thumnail-banner img{
+    width: 840px;
+    height: 840px;
+    display: block;
+    object-fit:contain;
+    
+
+}
