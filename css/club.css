@@ -1,13 +1,267 @@
-.product-thumnail-banner{
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #151515;
+    height: 100vh;
+}
+
+
+.container {
     width: 100%;
+    margin: 0 auto;
+    margin-top: 68px;
+}
+
+.content {
+    max-width: 755px;
+    padding: 0 ;
+    margin: 0 auto;
+    min-height: 90vh;
+    
+}
+
+
+header {
+    top: 0;
+    width: 100vw;
+    position: relative;
+    z-index: 100;
+    position: fixed;
+    background-color: #151515;
+}
+
+header > div{
+    max-width: 1080px;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #151515;
+    margin: 0 auto;
+    padding: 8px 0;
+    z-index: 100;
+}
+
+header > div > button {
+    border: none;
+    padding: 10px 8px;
+    background-color: #151515;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+header > div > button > a{
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+header > div > img {
+    width: 66px;
+    height: 18px;
+    margin: 0 2em;
+}
+
+footer {
+    margin-top: 48px;
+    padding-bottom: 32px;
+    background-color: #111111;
+    font-size: 13px;
+}
+
+footer > div:first-child {
+    padding: 40px 32px 36px 32px;
+    margin: 0 auto;
+    max-width: 1080px;
+    border-bottom: 1px solid #ffffff0a;
+}
+
+.footercontact {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #7a7a7a;
+    max-width: 1016px;
+    
+}
+
+.footercontact > a {
+    color: #c8c7c7;
+    text-decoration: underline;
+
+}
+
+.footerbot {
+    padding: 16px 32px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.footerbot > button {
+    background-color: #111111;
+    min-width: 73px;
+    border: none;
+    color: #7a7a7a;
+    font-size: 12px;
+}
+
+.footerbot > button:nth-child(2) {
+    font-weight: bold;
+}
+
+
+.mobile-nav {
+    display: none;
+}
+
+
+
+.totop > a{
+    width: 48px;
+    height: 48px;
+
+    position: fixed;
+    left: 90vw;
+    bottom:10vh;
+    background-color: #000000;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.totop > a > svg {
+    width: 24px;
+    height: 24px;
+    color: #c8c7c7;
+}
+
+.active {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        width: 100vw;
+    }
+    header > div > button {
+        display: none;
+    }
+
+    .content {
+        padding: 0px;
+    }
+
+    footer > div:first-child {
+        padding: 40px 16px 16px 16px;
+    }
+
+    .footerbot {
+        margin-bottom: 58px;
+    }
+
+    .mobile-nav {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        background-color: #151515;
+        color: #7a7a7a;
+        font-size: 10px;
+        border-top: 1px solid #ffffff0a;
+    }
+
+    .mobile-nav > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 2;
+        height: 58px;
+    }
+    
+    .mobile-nav > div > a {
+        text-decoration: none;
+        color: #7a7a7a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav > div > a > svg {
+        max-width: 24px;
+        max-height: 24px;
+    }
+}
+
+
+
+.product-thumnail-banner{
+    width: 755px; 
     height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .product-thumnail-banner img{
-    width: 840px;
-    height: 840px;
-    display: block;
-    object-fit:contain;
-    
+    width: 755px;
+    height: 755px;
+    object-fit: cover;
+    margin-top: 50px;
 
+}
+
+.product-summary{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    
+}
+
+.product-summary-title {
+    font-weight: 100;
+}
+
+.product-summary-left{
+    color: white;
+    justify-content: flex-start;
+    
+}
+
+.product-summary-right{
+    justify-content: flex-end;
+}
+
+.product-status {
+    margin-top: 15px;
+    color: darkgray;
+}
+
+.product-summary-price-container{
+    margin-top: 15px;
+}
+.product-summary-price span{
+    color: white;
+    font-size: 24px;
+}
+.product-collapse-label{
+    color: white;
 }
