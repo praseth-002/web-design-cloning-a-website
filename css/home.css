@@ -57,8 +57,8 @@
 
 
 .sharebutt {
-    max-width: 80px;
-    max-height: 40px;
+    width: 80px;
+    height: 40px;
     padding: 16px 4px;
     background-color: transparent;
     border: 1px solid #ffffffba;
@@ -70,7 +70,7 @@
 
 .sharebutt > a {
     text-decoration: none;
-    color: #ffffffba;
+    color: #ffffff;
 }
 
 .memcontainer {
@@ -111,6 +111,14 @@
     margin-bottom: 16px;
 }
 
+.storiescontainer {
+    
+    padding-top: 42px;
+    position: relative;
+    margin-bottom: 24px;
+
+}
+
 .stories {
     display: flex;
     flex-direction: row;
@@ -118,10 +126,10 @@
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-color: transparent transparent;
-    padding-top: 42px;
+    width: 100%;
 }
 
-.stories > div {
+.storiesitems {
     min-width: 132px;
     min-height: 176px;
     width: 132px;
@@ -158,10 +166,154 @@
     color: white;
 }
 
+.arrow {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ffffff1a;
+    border-radius: 1.5em;
+    background-color: #232323;
+}
+
+.arrow > svg {
+    width: 15px;
+    height: 15px;
+    color: #eeeeee;
+}
+
+.arrowr {
+    right: -24px;
+}
+
+.arrowl{
+    left: -24px;
+}
+
+.music {
+    padding: 24px 0;
+}
+
 .music > p {
     font-weight: bold;
     color: white;
     padding-bottom: 16px;
+}
+
+.twtcontainer {
+    position: relative;
+    padding: 24px 0;
+}
+
+.twtheader {
+    color: white;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.twt {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: transparent transparent;
+    color: white;
+    font-size: 13.88px;
+    gap: 24px;
+
+}
+
+.twtitems {
+    min-width: 210.66px;
+    height: 330.66px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff0f;
+    border: 1px solid #ffffff1a;
+    border-radius: 0.5em;
+}
+
+.twtitems > a:first-child {
+    flex-grow: 1;
+}
+
+.twtitems > a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.twtimg {
+    width: calc(100% + 32px);
+    flex-grow: 1;
+    background-color: #ffffff;
+    margin: -8px -16px 0 -16px;
+    border-radius: 0.5em 0.5em 0 0;
+
+}
+
+.twttxt1 {
+    max-width: 100%;
+    height: 282px;
+    text-wrap: wrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twttxt2 {
+    margin: 10px 0;
+    max-width: 100%;
+    height: 60px;
+    text-wrap: wrap;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twtacc {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #ffffffba;
+}
+
+.twtacc > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.twtacc > div > div{
+    height: 24px;
+    width: 24px;
+    border-radius: 1.5rem;
+    background-color: white;
+}
+
+.twtacc > svg {
+    color: white;
+    justify-content: flex-end;
+    width: 18px;
+    height: 18px;
+    fill: #ffffffba;
 }
 
 
@@ -191,5 +343,9 @@
 
     .txtover > p {
         text-align: center;
+    }
+
+    .arrow {
+        display: none;
     }
 }
