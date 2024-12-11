@@ -396,8 +396,14 @@ footer{
     color: white;
 }
 
+.base-cart-section{
+    margin-top: 20px;
+    padding: 10px;
+}
+
 .header-divider{
-    height: 50px;
+    height: 8px;
     width: 100%;
     background-color: black;
+    margin-top: 20px;
 }
