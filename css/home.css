@@ -91,6 +91,7 @@
 }
 
 .members > div {
+    flex-grow: 1;
     max-width: 236px;
     max-height: 348px;
 }
@@ -145,7 +146,7 @@
 
 .storiespfp {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: calc(50% - 22px);
     max-width: 44px;
     max-height: 44px;
@@ -338,6 +339,117 @@
     fill: #ffffffba;
 }
 
+.videocontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px 0;
+    border-top: 1px solid white;
+    color: white;
+    grid-gap: 24px;
+}
+
+.videoitems {
+    /* width: 100%;
+    height: auto; */
+}
+
+.videoitems > a{
+    /* max-width: 492px;
+    max-height: 485px; */
+    text-decoration: none;
+}
+
+
+
+.videoitems > a > img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.videodesc {
+    padding: 20px;
+    background-color: transparent;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    gap: 8px;
+}
+
+.videodesc > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.deschead {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.descdate {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 100%;
+}
+
+.descdate > svg {
+    max-width: 13px;
+    max-height: 13px;
+    fill: #999999;
+}
+
+.desccmt > span{
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.desccmt >span:last-child {
+    color: #999999;
+    font-weight: normal;
+}
+
+.descemoji {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.descemoji > div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 7px 9px;
+    border-radius: 1.5em;
+    border: 0.5px solid #ffffff0a;
+    background-color: #ffffff0a;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.descemoji > div > img{
+    max-width: 20px;
+    max-width: 20px;
+}
+
+.descemoji > div > svg {
+    width: 16px;
+    height: 16px;
+    fill: #999999;
+}
+
 
 
 @media only screen and (max-width: 800px) {
@@ -378,6 +490,7 @@
     .members {
         overflow-x: scroll;
         gap: 12px;
+        scrollbar-color: transparent transparent;
     }
 
     .members > div > a > img {
@@ -386,5 +499,9 @@
         width: 144px;
         height: 192px;
         object-fit: cover;
+    }
+
+    .videocontainer {
+        grid-template-columns: repeat(1,1fr);
     }
 }
