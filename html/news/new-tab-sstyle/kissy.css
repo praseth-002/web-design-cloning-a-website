@@ -1,0 +1,54 @@
+.container{
+    display: grid;
+    grid-template-rows: 40px auto;
+}
+.firstdiv{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+    color: white;
+    gap: 10px;
+}
+.textt{
+    padding-bottom: 10px;
+}
+.thirddiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    
+}
+.three-element{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.message{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.493);
+    font-size: 25px;
+}
+.bo{
+    margin-top: 25px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    color: #000000;
+    background-color: #b99aff;
+}
+.start{
+    text-align: center;
+}
+.logo{
+    margin-bottom: 10px;
+}
