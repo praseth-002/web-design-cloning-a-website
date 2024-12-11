@@ -391,3 +391,13 @@ footer{
     color:#919191;
     font-size: 14px;
 }
+
+.section-left{
+    color: white;
+}
+
+.header-divider{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
