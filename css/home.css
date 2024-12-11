@@ -506,4 +506,9 @@
     .videocontainer {
         grid-template-columns: repeat(1,1fr);
     }
+
+    .videoitems > a > img {
+        max-height: none;
+        height: auto;
+    }
 }
