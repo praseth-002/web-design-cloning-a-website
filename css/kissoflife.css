@@ -111,6 +111,25 @@ footer > div > button {
     
 }
 
+.totop > a {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    left: 90vw;
+    bottom: 10vh;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totop > a > svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
 .content {
     min-height: 40vh;
     display: flex;
@@ -242,7 +261,7 @@ footer > div > button {
     display: flex;
     flex-direction: row; 
     align-items: center; 
-    margin: 0 75px;
+    padding: 0 75px;
     gap: 75px;
 }
 
@@ -265,6 +284,7 @@ footer > div > button {
     margin: auto;
     width: 100%;
 }
+
 .update-social::-webkit-scrollbar {
     display: none; 
     scroll-behavior: smooth;
@@ -738,7 +758,7 @@ footer > div > button {
 
     .social-image {
         flex-direction: row;
-        gap: 20%;
+        gap: 30%;
         margin: 0;
         margin-left: 10%;
     }
@@ -808,13 +828,12 @@ footer > div > button {
     }
 
     .right-bar {
-        width: 65%;
+        width: 70%;
     }
 
     .social-image {
-        width: 80%;
-        gap: 10%;
-        margin: 0 15%;
+        width: 100%;
+        gap: 40%;
     }
 
     .emoji-reaction {
@@ -822,7 +841,7 @@ footer > div > button {
     }
 
     .comment-section {
-        width: 50%; 
+        width: 70%; 
     }
 
     .emoji-reaction2 {
