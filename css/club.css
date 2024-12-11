@@ -9,6 +9,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #151515;
     height: 100vh;
+    overflow-x: hidden;
+    
 }
 
 
@@ -23,6 +25,7 @@ body {
     padding: 0 ;
     margin: 0 auto;
     min-height: 90vh;
+    font-size: 18px;
     
 }
 
@@ -257,11 +260,144 @@ footer > div:first-child {
 
 .product-summary-price-container{
     margin-top: 15px;
+    border-bottom: 1px solid rgb(36, 36, 36);
+    padding-top:15px;
+    padding-bottom:15px;
 }
 .product-summary-price span{
     color: white;
     font-size: 24px;
 }
 .product-collapse-label{
+    color: gray;
+}
+
+.header-colllapse{
+    display: flex;
+    margin-top: 20px;
+    
+    
+}
+
+.product-collapse-text{
     color: white;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.down-arrow {
+    margin-left: auto;
+
+}
+
+.product-summary-share img{
+    width: 24px;
+    height: 24px;
+}
+
+.product-summary-avalaible-area{
+    margin-top: 15px;
+    color: #7a7a7a;
+}
+
+.down-arrow img{
+    height: 12px;
+    width: 12px;
+}
+
+.product-summary-hasCollaspe{
+    margin-top: 15px;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    padding:25px;
+
+}
+.shipping-info{
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom:0px;
+}
+
+.shipping-info-2{
+    margin-top: 0px;
+    width: 100%;
+    margin-top:50px;
+    margin-bottom: 10px;
+}
+
+
+.shipping-type p{
+    color: #7a7a7a;
+    font-size: 15px;
+}
+
+.product-shipping-description{
+    margin-top: 15px;
+}
+
+.logistic > p{
+    color: white;
+    font-weight: lighter;
+
+}
+
+.description{
+    color: white;
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+.shipping-estimate {
+    margin-top:10px;
+    color: #919191;
+    border-radius: 5px;
+    padding: 4px;
+    border: 1px solid #cecece;
+    width: 36%;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #151515;
+    font-size: 13px;
+    border-top: 1px solid #2f2f2f;
+    height: 90px;
+    display: flex;
+}
+.footer-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
+.group-button{
+    padding: 10px;
+}
+.group-button button{
+    padding: 13px 295px;
+    border-radius: 10px;
+    border: none;
+    background-color: #554B70;
+    font-size: 18px;
+}
+
+.product-ship{
+    margin-top: 15px;
+    color:#919191;
+    font-size: 14px;
+}
+
+.section-left{
+    color: white;
+}
+
+.header-divider{
+    height: 50px;
+    width: 100%;
+    background-color: black;
 }
