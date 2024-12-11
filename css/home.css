@@ -372,6 +372,7 @@
 .videodesc {
     padding: 20px;
     background-color: transparent;
+    background-color: #232323;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
