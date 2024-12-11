@@ -363,7 +363,8 @@
 
 .videoitems > a > img {
     width: 100%;
-    height: auto;
+    max-height: 236px;
+    object-fit: cover;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
@@ -371,7 +372,7 @@
 .videodesc {
     padding: 20px;
     background-color: transparent;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     border-bottom-left-radius: 1em;
