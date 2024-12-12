@@ -280,10 +280,17 @@
 .twtimg {
     width: calc(100% + 32px);
     flex-grow: 1;
-    background-color: #ffffff;
     margin: -8px -16px 0 -16px;
     border-radius: 0.5em 0.5em 0 0;
 
+}
+
+.twtimg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
 
 .twttxt1 {
@@ -307,6 +314,7 @@
     justify-content: center;
 }
 
+
 .twtacc {
     height: 32px;
     display: flex;
@@ -324,11 +332,17 @@
     gap: 5px;
 }
 
-.twtacc > div > div{
+.twtaccimg {
     height: 24px;
     width: 24px;
     border-radius: 1.5rem;
-    background-color: white;
+}
+
+.twtaccimg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5em;
 }
 
 .twtacc > svg {
@@ -339,11 +353,24 @@
     fill: #ffffffba;
 }
 
+.twtitems:last-child {
+    background-color: transparent;
+}
+
+.twtitemsmore {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff99;
+}
+
 .videocontainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 24px 0;
-    border-top: 1px solid white;
+    border-top: 1px solid #888888;
     color: white;
     grid-gap: 24px;
 }
@@ -452,6 +479,25 @@
     fill: #999999;
 }
 
+.viewmore {
+    padding: 12px 16px 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewmore > button {
+    width: 240px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #ffffff1a;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 
 
 @media only screen and (max-width: 800px) {
@@ -510,5 +556,13 @@
     .videoitems > a > img {
         max-height: none;
         height: auto;
+    }
+
+    .viewmore {
+        padding: 12px 0 48px;
+    }
+
+    .viewmore > button {
+        width: 100%;
     }
 }
