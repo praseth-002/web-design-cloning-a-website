@@ -1,114 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #151515;
-    color: white;
-}
-
-.container {
-    width: 70%;
-    margin: 0 auto;
-}
-
-header {
-    width: 100%;
-    height: 68px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #151515;
-    margin: auto;
-    padding: 8px 0;
-    top: 0;
-    position: sticky;
-    z-index: 100;
-}
-
-header > button {
-    border: none;
-    padding: 10px 8px;
-    background-color: #151515;
-    color: white;
-    font-weight: bold;
-}
-
-a{
     text-decoration: none;
     color: white;
 }
 
-header > img {
-    width: 66px;
-    height: 17px;
-    margin: 0 2em;
-}
-
-footer {
-    padding: 40px;
-    margin: 0 auto;
-    background-color: #151515;
-    color: #7a7a7a;
-    font-size: 10pt;
-    width: 100%;
-     text-wrap: wrap;
-}
-
-footer > a {
-    color: #c8c7c7;
-
-} 
-
-footer > div:first-of-type {
-    padding: 40px;
-    margin: 20px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1em;
-    border-top: 0.01px solid #7a7a7a;
-    flex-wrap: wrap;
-}
-
-footer > div > button {
-    background-color: #151515;
-    min-width: 120px;
-    border: none;
-    color: #7a7a7a;
-    font-size: 10pt;
-}
-
-.mobile-nav {
+.totop > a {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    left: 90vw;
+    bottom: 10vh;
+    background-color: #000000;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #7a7a7a;
 }
 
-.mobile-nav > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    height: 58px;
-    border: 1px solid white;
-}
-
-.mobile-nav > div > svg {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-@media only screen and (max-width: 800px) {
-    
+.totop > a > svg {
+    width: 24px;
+    height: 24px;
+    color: white;
 }
 
 .content {
@@ -184,11 +95,15 @@ footer > div > button {
 .upper-right {
     display: flex;
     flex-direction: row;
-    margin: 20px 0;
+    margin: 30px 0;
     width: 100%;
     height: 40px;
     align-items: center;
     justify-content: space-between;
+}
+
+.upper-right:first-child {
+    margin-top: 72px;
 }
 
 .name {
@@ -242,7 +157,7 @@ footer > div > button {
     display: flex;
     flex-direction: row; 
     align-items: center; 
-    margin: 0 75px;
+    padding: 0 75px;
     gap: 75px;
 }
 
@@ -265,6 +180,7 @@ footer > div > button {
     margin: auto;
     width: 100%;
 }
+
 .update-social::-webkit-scrollbar {
     display: none; 
     scroll-behavior: smooth;
@@ -299,12 +215,12 @@ footer > div > button {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    margin-top: 5px;
 }
 
 .reaction i , .comment i{
     display: flex;
     gap: 10px;
-    margin-top: 5px;
 }
 
 .reaction, .comment {
@@ -315,7 +231,6 @@ footer > div > button {
 .reaction p, .comment p {
     display: flex;
     justify-content: center;
-    margin-top: 1px;
 }
 
 .profile-comment {
@@ -356,9 +271,12 @@ footer > div > button {
     flex-direction: row;
     justify-content: center;
     justify-self: center;
-    padding-top: 3px;
+    padding-top: 5px;
 }
 
+.emoji p {
+    margin-top: 5px;
+}
 .verified2 {
     display: flex;
     flex-direction: column;
@@ -541,6 +459,7 @@ footer > div > button {
     }
 
     .left-bar {
+        padding-top: 36px;
         flex-direction: row;
         width: 100%;
         margin: 0;
@@ -687,6 +606,7 @@ footer > div > button {
     }
 
     .left-bar {
+        padding-top: 50px;
         display: flex;
         flex-direction: row; 
         width: 100%;
@@ -738,7 +658,7 @@ footer > div > button {
 
     .social-image {
         flex-direction: row;
-        gap: 20%;
+        gap: 30%;
         margin: 0;
         margin-left: 10%;
     }
@@ -808,13 +728,12 @@ footer > div > button {
     }
 
     .right-bar {
-        width: 65%;
+        width: 70%;
     }
 
     .social-image {
-        width: 80%;
-        gap: 10%;
-        margin: 0 15%;
+        width: 100%;
+        gap: 40%;
     }
 
     .emoji-reaction {
@@ -822,7 +741,7 @@ footer > div > button {
     }
 
     .comment-section {
-        width: 50%; 
+        width: 70%; 
     }
 
     .emoji-reaction2 {
