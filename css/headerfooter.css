@@ -59,6 +59,10 @@ header > div{
     z-index: 100;
 }
 
+/* header > .headerr {
+    justify-content: flex;
+} */
+
 header > div > button {
     border: none;
     padding: 10px 8px;
@@ -76,6 +80,34 @@ header > div > img {
     width: 66px;
     height: 18px;
     margin: 0 2em;
+}
+
+.headerr {
+    padding-right: 32px;
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.headerr > div {
+    width: 24px;
+    height: 24px;
+    margin: 8px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerr > div > a > svg {
+    min-width: 24px;
+    min-height: 24px;
+    fill: white;
+}
+
+.headerr > div > a > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 1.5em;
 }
 
 footer {
