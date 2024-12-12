@@ -1,0 +1,28 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ul{
+    list-style: none;
+}
+.horizon{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.127);
+    padding-top: 20px;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.privatepost{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.401);
+}
+.time{
+    color: rgba(255, 255, 255, 0.401);
+}
+a{
+    text-decoration: none;
+}

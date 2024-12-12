@@ -3,8 +3,7 @@
     padding: 0;
     /* overflow: hidden; */
     box-sizing: border-box;
-    scrollbar-color: #ffffffba transparent; 
-  }
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -27,15 +26,21 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    margin-top: 72px;
+    margin-top: 68px;
 }
 
 .content {
     max-width: 1080px;
-    padding: 0 32px;
+    padding: 0 30px;
     margin: 0 auto;
     min-height: 90vh;
+    
 }
+
+/* .container > img {
+    width: 100%;
+    height: auto;
+} */
 
 header {
     top: 0;
@@ -48,7 +53,7 @@ header {
 
 header > div{
     max-width: 1080px;
-    height: 72px;
+    height: 68px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,10 +63,6 @@ header > div{
     padding: 8px 0;
     z-index: 100;
 }
-
-/* header > .headerr {
-    justify-content: flex;
-} */
 
 header > div > button {
     border: none;
@@ -80,34 +81,6 @@ header > div > img {
     width: 66px;
     height: 18px;
     margin: 0 2em;
-}
-
-.headerr {
-    padding-right: 32px;
-    margin-left: auto;
-    display: flex;
-    gap: 8px;
-}
-
-.headerr > div {
-    width: 24px;
-    height: 24px;
-    margin: 8px;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.headerr > div > a > svg {
-    min-width: 24px;
-    min-height: 24px;
-    fill: white;
-}
-
-.headerr > div > a > img {
-    width: 32px;
-    height: 32px;
-    border-radius: 1.5em;
 }
 
 footer {
@@ -197,23 +170,14 @@ footer > div:first-child {
 
 @media only screen and (max-width: 800px) {
     body{
-        width: 100%;
+        width: 100vw;
     }
-
-    .container {
-        margin-top: 48px;
-    }
-
-    header > div {
-        height: 48px;
-    }
-
     header > div > button {
         display: none;
     }
 
     .content {
-        padding: 0 16px;
+        padding: 0px;
     }
 
     footer > div:first-child {
@@ -235,7 +199,6 @@ footer > div:first-child {
         color: #7a7a7a;
         font-size: 10px;
         border-top: 1px solid #ffffff0a;
-        z-index: 3
     }
 
     .mobile-nav > div{

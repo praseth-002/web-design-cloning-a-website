@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.containerbig{
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.alltwo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.horizon{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+}
+.fristOfTwo{
+    display: flex;
+    flex-direction: row;
+}
+.alltext{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.headertext{
+    display: flex;
+    flex-direction: row;
+}
+.footertext{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.531);
+}
+.twoname{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.secondOfTwo a {
+    text-decoration: none;
+    color: white;
+}
+.comment{
+    color: rgba(255, 255, 255, 0.452);
+}
+.allmanager{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.Manager{
+    width: 70px;
+    height: 15px;
+    border: 1px solid rgb(6, 5, 5);
+    padding: 2px; 
+    margin-bottom: 5px;
+    border-radius: 50px; /* Rounded corners */
+    background-color: #7c7b7b7f; /* Light gray background */
+    color: #ece7e7a7; /* Text color */
+    font-size: 12px; /* Font size for the text */
+    text-align: center;
+     /* Centers the text */
+    display: inline-block;
+}
+.dot{
+    display: flex;
+    padding-bottom: 11px;    
+}
+.date{
+    padding-top: 3px;
+}
+.number{
+    color: red;
+    padding-right: 5px;
+}
+.pic {
+    width: 100px;
+    height: 70px;
+    border-radius: 10px; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image doesn't overflow *//* Optional border for styling */
+  }
+  
+  .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }

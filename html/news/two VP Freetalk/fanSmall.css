@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.containerbig {
+  color: white;
+}
+ul {
+  list-style: none;
+}
+.alltwo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.horizon {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+}
+.fristOfTwo {
+  display: grid;
+  grid-template-columns: auto 90px;
+}
+.alltext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.headertext {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.footertext {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.531);
+}
+.twoname {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.secondOfTwo a {
+  text-decoration: none;
+  color: white;
+}
+.comment {
+  color: rgba(255, 255, 255, 0.452);
+}
+.allmanager {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.dot {
+  display: flex;
+  padding-bottom: 11px;
+}
+.date {
+  padding-top: 3px;
+}
+.number {
+  color: red;
+  padding-right: 5px;
+}
+.pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px; /* Makes the image circular */
+  overflow: hidden; /* Ensures the image doesn't overflow */ /* Optional border for styling */
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

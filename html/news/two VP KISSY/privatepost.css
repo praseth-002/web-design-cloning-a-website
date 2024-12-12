@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #151515;
+    height: 100vh;
+}
+
+/* old content container (my bad bru for setting the container to 70%) */
+/* .container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 50vh;
+} */
+
+/* new more responsive content container */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 68px;
+}
+
+.content {
+    max-width: 1080px;
+    padding: 0 30px;
+    margin: 0 auto;
+    min-height: 90vh;
+}
+
+/* .container > img {
+    width: 100%;
+    height: auto;
+} */
+
+header {
+    top: 0;
+    width: 100vw;
+    position: relative;
+    z-index: 100;
+    position: fixed;
+    background-color: #151515;
+}
+
+header > div{
+    max-width: 1080px;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #151515;
+    margin: 0 auto;
+    padding: 8px 0;
+    z-index: 100;
+}
+
+header > div > button {
+    border: none;
+    padding: 10px 8px;
+    background-color: #151515;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+header > div > button > a{
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+header > div > img {
+    width: 66px;
+    height: 18px;
+    margin: 0 2em;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   padding-top: 250px;
+}
+.text{
+  color: rgba(255, 255, 255, 0.435);
+}
+button{
+   
+    background-color: #151515;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}

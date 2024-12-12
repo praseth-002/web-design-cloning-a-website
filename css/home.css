@@ -1,5 +1,82 @@
-.content > div {
-    padding: 16px 0;
+/* .body {
+    overflow-x: hidden;
+} */
+
+.bgimage {
+    max-width: 1648px;
+    max-height: 824px;
+}
+
+.bigimg {
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.smolimg {
+    display: none;
+}
+
+.gomidpls {
+    position: relative;
+    z-index: 1;
+    max-width: 1080px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+.txtover {
+    position: absolute;
+    bottom: 24px;
+    color: #ffffffba;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.txtover > img {
+    width: 180px;
+    height: 50px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.socials > div {
+    margin: 0 6px;
+}
+
+.socials > div > a > svg {
+    max-width: 24px;
+    max-height: 24px;
+    fill: #ffffffba;
+}
+
+
+.sharebutt {
+    width: 80px;
+    height: 40px;
+    padding: 16px 4px;
+    background-color: transparent;
+    border: 1px solid #ffffffba;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sharebutt > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.memcontainer {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .memcontainer > p {
@@ -10,39 +87,482 @@
 
 .members {
     display: flex;
-    /* justify-content: space-between; */
     gap: 24px;
 }
 
 .members > div {
     flex-grow: 1;
     max-width: 236px;
-    max-height: 316px;
-    overflow-y: hidden;
+    max-height: 348px;
 }
 
-.members > div > a{
-    
-}
 
 .members > div > a > img {
     width: 100%;
+    max-height: 315px;
     height: auto;
-    /* max-height: 315px;
-    max-width: 235px; */
-    /* overflow-y: hidden; */
+    object-fit: cover;
 }
 
 .members > div > p {
     color: white;
-    font-weight: bold;
+    text-align: center;
     padding-top: 16px;
+    margin-bottom: 16px;
+}
+
+.storiescontainer {
+    
+    padding-top: 24px;
     position: relative;
-    z-index: 2;
+    margin-bottom: 24px;
+
+}
+
+.stories {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: transparent transparent;
+    width: 100%;
+}
+
+.storiesitems {
+    min-width: 132px;
+    min-height: 176px;
+    width: 132px;
+    height: 176px;
+    position: relative;
+}
+
+.stories > div > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+.storiespfp {
+    position: absolute;
+    bottom: 15%;
+    left: calc(50% - 22px);
+    max-width: 44px;
+    max-height: 44px;
+}
+
+.storiespfp > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #E0A0FC;
+    border-radius: 1.5em;
+}
+
+.storiespfp > p {
+    font-size: 0.75em;
+    text-align: center;
+    color: white;
+}
+
+.arrow {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ffffff1a;
+    border-radius: 1.5em;
+    background-color: #232323;
+}
+
+.arrow > svg {
+    width: 15px;
+    height: 15px;
+    color: #eeeeee;
+}
+
+.arrowr {
+    right: -24px;
+}
+
+.arrowl{
+    left: -24px;
+}
+
+.music {
+    padding: 24px 0;
 }
 
 .music > p {
     font-weight: bold;
     color: white;
     padding-bottom: 16px;
+}
+
+.twtcontainer {
+    position: relative;
+    padding: 24px 0;
+}
+
+.arrowtwt {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+
+    width: 42px;
+    height: 42px;
+    border: 1px solid #ffffff1a;
+    border-radius: 1.5em;
+    background-color: #111111;
+}
+
+.arrowtwt > svg {
+    width: 15px;
+    height: 15px;
+    color: #eeeeee;
+}
+
+.twtheader {
+    color: white;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.twt {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: transparent transparent;
+    color: white;
+    font-size: 13.88px;
+    gap: 24px;
+
+}
+
+.twtitems {
+    min-width: 210.66px;
+    height: 330.66px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff0f;
+    border: 1px solid #ffffff1a;
+    border-radius: 0.5em;
+}
+
+.twtitems > a:first-child {
+    flex-grow: 1;
+}
+
+.twtitems > a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.twtimg {
+    width: calc(100% + 32px);
+    flex-grow: 1;
+    margin: -8px -16px 0 -16px;
+    border-radius: 0.5em 0.5em 0 0;
+
+}
+
+.twtimg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.twttxt1 {
+    max-width: 100%;
+    height: 282px;
+    text-wrap: wrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twttxt2 {
+    margin: 10px 0;
+    max-width: 100%;
+    height: 60px;
+    text-wrap: wrap;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.twtacc {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #ffffffba;
+}
+
+.twtacc > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.twtaccimg {
+    height: 24px;
+    width: 24px;
+    border-radius: 1.5rem;
+}
+
+.twtaccimg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5em;
+}
+
+.twtacc > svg {
+    color: white;
+    justify-content: flex-end;
+    width: 18px;
+    height: 18px;
+    fill: #ffffffba;
+}
+
+.twtitems:last-child {
+    background-color: transparent;
+}
+
+.twtitemsmore {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff99;
+}
+
+.videocontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px 0;
+    border-top: 1px solid #888888;
+    color: white;
+    grid-gap: 24px;
+}
+
+.videoitems {
+    /* width: 100%;
+    height: auto; */
+}
+
+.videoitems > a{
+    /* max-width: 492px;
+    max-height: 485px; */
+    text-decoration: none;
+}
+
+
+
+.videoitems > a > img {
+    width: 100%;
+    max-height: 236px;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.videodesc {
+    padding: 20px;
+    background-color: transparent;
+    background-color: #232323;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    gap: 8px;
+}
+
+.videodesc > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.deschead {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.descdate {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 100%;
+}
+
+.descdate > svg {
+    max-width: 13px;
+    max-height: 13px;
+    fill: #999999;
+}
+
+.desccmt > span{
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.desccmt >span:last-child {
+    color: #999999;
+    font-weight: normal;
+}
+
+.descemoji {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.descemoji > div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 7px 9px;
+    border-radius: 1.5em;
+    border: 0.5px solid #ffffff0a;
+    background-color: #ffffff0a;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.descemoji > div > img{
+    max-width: 20px;
+    max-width: 20px;
+}
+
+.descemoji > div > svg {
+    width: 16px;
+    height: 16px;
+    fill: #999999;
+}
+
+.viewmore {
+    padding: 12px 16px 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewmore > button {
+    width: 240px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #ffffff1a;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .bgimage {
+        max-width: 800px;
+        max-height: 1066px;
+    }
+
+    .bigimg {
+        display: none;
+    }
+
+    .smolimg {
+        display: inline;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .txtover {
+        top: 24px;
+        left: calc(50% - 171.735px);
+        align-items: center;
+    }
+
+    .txtover > p {
+        text-align: center;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .arrowtwt {
+        display: none;
+    }
+
+    .members {
+        overflow-x: scroll;
+        gap: 12px;
+        scrollbar-color: transparent transparent;
+    }
+
+    .members > div > a > img {
+        max-width: none;
+        max-height: none;  
+        width: 144px;
+        height: 192px;
+        object-fit: cover;
+    }
+
+    .videocontainer {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .videoitems > a > img {
+        max-height: none;
+        height: auto;
+    }
+
+    .viewmore {
+        padding: 12px 0 48px;
+    }
+
+    .viewmore > button {
+        width: 100%;
+    }
 }
