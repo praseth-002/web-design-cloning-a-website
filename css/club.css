@@ -538,3 +538,48 @@ ul ::marker{
 .no-space-container{
     margin-bottom: 50px;
 }
+
+
+.square-list strong {
+    color: white;
+    font-size: 1.8em; 
+}
+
+.square-list ul {
+    list-style: none;
+    padding-left: 0;
+    color: white;
+    font-size: 1.2em; /* Make the list text bigger */
+    
+}
+
+.square-list ul li {
+    position: relative;
+    padding-left: 35px; 
+    margin-bottom: 15px;
+}
+
+.square-list ul li::before {
+    content: "■"; 
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1em;
+    
+}
+
+.square-list ul ul li::before {
+    font-size: 1.5em;
+}
+
+.square-list ul .no-square::before {
+    content: none;
+    position: static; /
+}
+
+
+
+
+
