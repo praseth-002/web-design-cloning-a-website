@@ -1,0 +1,45 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    padding-top: 32px;
+    max-width: 704px;
+}
+
+.content {
+    color: white;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.content > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    color: #888888;
+}
+
+.cartbutton {
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ffffff1a;
+    border-radius: 0.5em;
+}
+
+.cartbutton > a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        padding-top: 0;
+    }
+}

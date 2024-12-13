@@ -212,6 +212,10 @@ footer > div:first-child {
         display: none;
     }
 
+    .headerr {
+        padding-right: 16px;
+    }
+
     .content {
         padding: 0 16px;
     }
