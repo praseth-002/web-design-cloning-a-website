@@ -29,6 +29,7 @@ a{
     overflow: hidden;
     display: flex;
     justify-content: flex-end; 
+    
 }
 
 .backgroung-img img {
@@ -168,8 +169,16 @@ a{
     margin-right: auto;
 }
 
-.video-slidder::-webkit-scrollbar {
+.frame-container::-webkit-scrollbar, .video-slidder::-webkit-scrollbar {
     display: none;
+}
+
+.frame-container, .video-slidder {
+    scrollbar-width: none; 
+}
+
+.frame-container, .video-slidder {
+    -ms-overflow-style: none; 
 }
 
 .mini-video {
