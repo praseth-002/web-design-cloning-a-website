@@ -1,0 +1,27 @@
+.pfphome {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    header > div > img {
+        display: none;
+    }
+
+    .pfphome {
+        display: flex;
+    }
+
+    .pfphome > div {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pfphome > div > a > svg {
+        min-width: 24px;
+        min-height: 24px;
+        color: #ffffff;
+        fill: white;
+    }
+}
