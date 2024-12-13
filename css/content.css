@@ -10,7 +10,6 @@ a{
 
 .content-video-slideshow {
     height: calc(100vh - 280px);
-    background-color: black;
     display: flex;
     align-items: center;
     position: relative;
@@ -21,24 +20,50 @@ a{
     width: 100%;
     height: 100%;
     position: relative;
+    background-color: black;
 }
+
+/* .backgroung-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slideshow 20s infinite; 
+} */
 
 .backgroung-img {
     width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    background-size: 80% 100%;
+    background-position: right; 
+    background-repeat: no-repeat;
+    mask-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+    /* -webkit-mask-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));  */
+    animation: slideshow 10s infinite; 
 }
 
-.backgroung-img img {
+@keyframes slideshow {
+    0% { background-image: url("../img-vdo-etc/content/get-loud.jpg"); }
+    33% { background-image: url("../img-vdo-etc/content/rem.jpg"); }
+    66% { background-image: url("../img-vdo-etc/content/sticky.jpg"); }
+    100% { background-image: url("../img-vdo-etc/content/midas-touch.jpg"); }
+}
+
+
+/* .backgroung-img img {
     width: 80%; 
     height: 100%;
     object-fit: cover; 
     object-position: right;
     mask-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
     -webkit-mask-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
-}
+} */
 
 .title-wrap {
     position: absolute; 
@@ -67,16 +92,11 @@ a{
     position: absolute;
     bottom: 5%; 
     left: 4%; 
-    width: 40%; 
-    overflow-x: auto;
+    width: 600px; 
+    overflow-x: scroll;
     display: flex; 
     gap: 15px;
 }
-
-.frame-container::-webkit-scrollbar {
-    display: none;
-}
-
 .mini-frame {
     display: flex;
     align-items: center;
@@ -168,8 +188,16 @@ a{
     margin-right: auto;
 }
 
-.video-slidder::-webkit-scrollbar {
+.frame-container::-webkit-scrollbar, .video-slidder::-webkit-scrollbar {
     display: none;
+}
+
+.frame-container, .video-slidder {
+    scrollbar-width: none; 
+}
+
+.frame-container, .video-slidder {
+    -ms-overflow-style: none; 
 }
 
 .mini-video {
