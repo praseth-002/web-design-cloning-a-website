@@ -540,35 +540,31 @@ ul ::marker{
 }
 
 
-.square-list strong {
+.square-list  strong {
     color: white;
-    font-size: 1.8em; 
+    
 }
 
 .square-list ul {
     list-style: none;
     padding-left: 0;
     color: white;
-    font-size: 1.2em; /* Make the list text bigger */
+    font-size: 1.2rem;
+    
+}
+.square-list ul li{
+    margin-bottom: 20px; 
+    
+}
+.square-list ul li span{
+    background-color: white;
+    display: inline-block;
+    height: 15px;
+    margin-right: 10px;
+    width: 15px; 
     
 }
 
-.square-list ul li {
-    position: relative;
-    padding-left: 35px; 
-    margin-bottom: 15px;
-}
-
-.square-list ul li::before {
-    content: "■"; 
-    font-size: 2em;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 1em;
-    
-}
 
 .square-list ul ul li::before {
     font-size: 1.5em;
@@ -576,10 +572,10 @@ ul ::marker{
 
 .square-list ul .no-square::before {
     content: none;
-    position: static; /
+    position: static; 
 }
 
-
-
-
+.container{
+    padding-bottom: 50px;
+}
 
