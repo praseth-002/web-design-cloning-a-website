@@ -1,12 +1,29 @@
 
 .content{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6%;
+    margin-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 .left-content{
-    position: sticky;
-    height: fit-content;
+  max-height: calc(100vh - 72px - 32px);
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 34%;
+  flex-shrink: 0;
+  position: sticky;
+  top: 104px;
+  padding-top: 0;
+  padding-bottom: 0;
+    
+}
+.right-content {
+    color: white;
+    font-family: Arial, sans-serif;
+    flex: 1 1;
 }
 ul{
     list-style: none;

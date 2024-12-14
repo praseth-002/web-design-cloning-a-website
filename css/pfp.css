@@ -1,7 +1,3 @@
-.content {
-    padding-top: 48px;
-}
-
 .pfparea {
     width: 640px;
     height: 173px;
@@ -50,6 +46,33 @@
 
 .btmhalf > div > h3 {
     color: white;
+}
+
+.itemcontainer {
+    padding-top: 24px;
+}
+
+.itemcontainer > a {
+    text-decoration: none;
+}
+
+.items {
+    height: 56px;
+    width: 640px;
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+}
+
+.items > svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    color: #eeeeee;
+}
+
+.itemsline {
+    border: 1px solid #ffffff0a;
 }
 
 @media only screen and (max-width: 800px) {
