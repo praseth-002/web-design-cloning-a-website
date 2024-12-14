@@ -301,6 +301,10 @@ a{
     .frame-container {
         display: none;
     }
+
+    .totop {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 479px) {
@@ -431,10 +435,6 @@ a{
     }
 
     .angle-left, .angle-right, .blank-space {
-        display: none;
-    }
-
-    .totop {
         display: none;
     }
 }

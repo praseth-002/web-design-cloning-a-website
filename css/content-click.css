@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #151515;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 68px;
+}
+
+.content {
+    padding: 0 30px;
+    margin: 0 auto;
+    min-height: 90vh;
+}
+
+header {
+    top: 0;
+    position: relative;
+    z-index: 50;
+    position: fixed;
+    background-color: #151515;
+}
+
+header > div{
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #151515;
+    margin: 0 auto;
+    padding: 8px 0;
+    z-index: 100;
+}
+
+header > div > button {
+    border: none;
+    padding: 10px 8px;
+    background-color: #151515;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+header > div > button > a{
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+header > div > img {
+    width: 66px;
+    height: 18px;
+    margin: 0 2em;
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        width: 100vw;
+    }
+    header > div > button {
+        display: none;
+    }
+
+    .content {
+        padding: 0px;
+    }
+
+    footer > div:first-child {
+        padding: 40px 16px 16px 16px;
+    }
+
+    .footerbot {
+        margin-bottom: 58px;
+    }
+
+    .mobile-nav {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        background-color: #151515;
+        color: #7a7a7a;
+        font-size: 10px;
+        border-top: 1px solid #ffffff0a;
+    }
+
+    .mobile-nav > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 2;
+        height: 58px;
+    }
+    
+    .mobile-nav > div > a {
+        text-decoration: none;
+        color: #7a7a7a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav > div > a > svg {
+        max-width: 24px;
+        max-height: 24px;
+    }
+}
