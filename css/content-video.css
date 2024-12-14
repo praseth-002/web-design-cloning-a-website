@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
@@ -10,22 +11,11 @@ body {
     height: 100vh;
 }
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 68px;
-}
-
-.content {
-    padding: 0 30px;
-    margin: 0 auto;
-    min-height: 90vh;
-}
-
 header {
+    width: 100vw;
     top: 0;
     position: relative;
-    z-index: 50;
+    z-index: 100;
     position: fixed;
     background-color: #151515;
 }
@@ -61,6 +51,127 @@ header > div > img {
     margin: 0 2em;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 68px;
+}
+
+.content {
+    padding: 0;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+}
+
+.video {
+    box-sizing: border-box;
+    flex: 1 1;
+}
+
+.video-player {
+    position: relative; 
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.player {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    border: none; 
+}
+
+.video-title {
+    padding: 24px 24px 20px;
+}
+
+.title {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.air-date {
+    margin-bottom: 24px;
+    font-size: 13px;
+}
+
+.air-date p {
+    color: gray;
+}
+
+.reactions {
+    padding: 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.reactions > div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 7px 9px;
+    border-radius: 1.5em;
+    border: 0.5px solid #ffffff0a;
+    background-color: #ffffff0a;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.reactions > div > img{
+    max-width: 20px;
+    max-width: 20px;
+}
+
+.reactions > div > svg {
+    width: 16px;
+    height: 16px;
+    fill: #999999;
+}
+
+.comments {
+    width: 400px;
+    background-color: paleturquoise;
+}
+
+.descriptions {
+    margin: 0 24px;
+    padding: 28px 0 70px 0;
+    border-top: 1px solid rgb(73, 73, 73);
+}
+
+.descriptions p span {
+    color: #0090ff;
+}
+
+.descriptions a {
+    color: #0090ff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header */
 @media only screen and (max-width: 800px) {
     body{
         width: 100vw;
