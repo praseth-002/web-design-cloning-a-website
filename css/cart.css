@@ -2,11 +2,6 @@ body {
     overflow: hidden;
 }
 
-.container {
-    padding-top: 32px;
-    max-width: 704px;
-}
-
 .content {
     color: white;
     height: 100vh;
@@ -38,8 +33,3 @@ body {
     color: #ffffff;
 }
 
-@media only screen and (max-width: 800px) {
-    .container {
-        padding-top: 0;
-    }
-}

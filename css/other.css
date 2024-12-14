@@ -2,6 +2,11 @@
     display: none;
 }
 
+.container {
+    padding-top: 32px;
+    max-width: 704px;
+}
+
 @media only screen and (max-width: 800px) {
     header > div > img {
         display: none;
@@ -23,5 +28,9 @@
         min-height: 24px;
         color: #ffffff;
         fill: white;
+    }
+
+    .container {
+        padding-top: 0;
     }
 }

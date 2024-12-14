@@ -1,0 +1,48 @@
+.content{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+.left-content{
+    position: sticky;
+    height: fit-content;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.allrob{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .rob{
+    width: 40px;
+    height: 70px;
+}
+.rob svg{
+    width: 100%;
+    height: 100%;
+}
+.star {
+    color: rgb(167, 3, 3);
+    font-size: 24px;
+   padding: 20px 20px 0px 0px;
+}
+.noticeinpic{
+    font-size: 20px;
+    padding-top: 22px;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.455);
+  }
+  .rob1 i{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    padding-top: 15px;
+    object-fit: cover;
+    color: white;
+  }

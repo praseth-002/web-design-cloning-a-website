@@ -147,6 +147,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.picdiv-two{
-  padding-left: 210px;
+.picdiv-two img{
+  padding-left: 510px;
 }

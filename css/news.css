@@ -1,3 +1,6 @@
+body{
+  font-family: Roboto;
+}
 .container{
   padding-top: 10px;
 }
@@ -28,12 +31,6 @@
   color: rgb(167, 3, 3);
   font-size: 24px;
  padding: 20px 10px 0px 0px;
-}
-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  overflow: hidden; /* Ensures no scrollbars are displayed */
 }
 .right-sidebar {
     overflow: visible; /* Remove scrolling behavior */
