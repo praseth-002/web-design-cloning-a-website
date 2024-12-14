@@ -85,6 +85,9 @@ html {
     color: white;
     border-bottom: 1px solid rgb(57, 57, 57);
     position: sticky;
+    top: 56px;
+    background-color:#151515 ;
+    z-index: 3;
     
 }
 
