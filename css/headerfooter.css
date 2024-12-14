@@ -101,7 +101,7 @@ header > div > img {
 .headerr > div > a > svg {
     min-width: 24px;
     min-height: 24px;
-    fill: white;
+    color: white;
 }
 
 .headerr > div > a > img {
