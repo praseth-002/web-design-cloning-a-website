@@ -26,37 +26,47 @@
   font-family: Arial, sans-serif;
   flex: 1 1;
 }
-ul {
-  list-style: none;
+.left-content> div > button {
+  border: none;
+  padding: 10px 8px;
+  background-color: #151515;
+  color: #7a7a7a;
+  font-weight: bold;
 }
-a {
+.left-content > div > button > a{
   text-decoration: none;
+  color: #7a7a7a;
+}
+.holder{
   color: white;
 }
-.allrob {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+a{
+  color: white;
 }
-.rob {
-  width: 40px;
-  height: 70px;
+.allrob{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .rob{
+    width: 30px;
+    height: 30px;
 }
-.rob svg {
-  width: 100%;
-  height: 100%;
+.rob svg{
+    width: 100%;
+    height: 100%;
 }
 .star {
-  color: rgb(167, 3, 3);
-  font-size: 24px;
-  padding: 20px 20px 0px 0px;
+    color: rgb(167, 3, 3);
+    font-size: 24px;
+   padding: 0px 20px 0px 0px;
 }
-.noticeinpic {
-  font-size: 20px;
-  padding-top: 22px;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-}
+.noticeinpic{
+    font-size: 18px;
+    padding-top: 5px;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.997);
+  }
 .header {
   display: flex;
   flex-direction: row;
@@ -121,7 +131,7 @@ button i {
 }
 .noticeinpickiss {
   font-size: 20px;
-  padding-top: 22px;
+  padding-top: 5px;
   justify-content: center;
   color: rgb(255, 255, 255);
 }
@@ -137,6 +147,9 @@ ul {
 .horizon {
   border-bottom: 1px solid rgba(255, 255, 255, 0.127);
   padding-top: 20px;
+}
+.horizonn{
+  border-right: 1px solid rgba(255, 255, 255, 0.271);
 }
 .two {
   display: flex;

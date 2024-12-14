@@ -3,6 +3,7 @@
   padding: 0;
   /* overflow: hidden; */
   box-sizing: border-box;
+  scrollbar-color: #ffffffba transparent; 
 }
 
 body {
@@ -13,12 +14,12 @@ body {
 
 /* old content container (my bad bru for setting the container to 70%) */
 /* .container {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .content {
-    min-height: 50vh;
+  min-height: 50vh;
 } */
 
 /* new more responsive content container */
@@ -26,20 +27,15 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  margin-top: 68px;
+  margin-top: 72px;
 }
 
 .content {
   max-width: 1080px;
-  padding: 0 30px;
+  padding: 0 32px;
   margin: 0 auto;
   min-height: 90vh;
 }
-
-/* .container > img {
-    width: 100%;
-    height: auto;
-} */
 
 header {
   top: 0;
@@ -50,9 +46,9 @@ header {
   background-color: #151515;
 }
 
-header > div {
+header > div{
   max-width: 1080px;
-  height: 68px;
+  height: 72px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,7 +67,7 @@ header > div > button {
   font-weight: bold;
 }
 
-header > div > button > a {
+header > div > button > a{
   text-decoration: none;
   color: #7a7a7a;
 }
@@ -80,6 +76,9 @@ header > div > img {
   width: 66px;
   height: 18px;
   margin: 0 2em;
+}
+.active{
+  color: white;
 }
 .container {
   display: flex;
