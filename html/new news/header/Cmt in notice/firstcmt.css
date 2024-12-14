@@ -1,13 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-  
   }
   .container {
     color: white;
     font-family: Arial, sans-serif;
+    flex: 1 1;
     display: flex;
     justify-content: center;
+    background-color: #151515;
   }
   .footerOfNotice {
     position: relative;
@@ -43,16 +44,16 @@ body {
     padding-top: 15px;
   }
   .headerManager {
-      width: 70px;
-      height: 15px;
-      border: 1px solid rgb(6, 5, 5);
-      padding: 1px; /* Gray border */
-      border-radius: 50px; /* Rounded corners */
-      background-color: #7c7b7b7f; /* Light gray background */
-      color: #ece7e7a7; /* Text color */
-      font-size: 12px; /* Font size for the text */
-      text-align: center; /* Centers the text */
-      display: inline-block;
+    width: 70px;
+    height: 20px;
+    border: 1px solid rgb(6, 5, 5);
+    padding: 2px; /* Gray border */
+    border-radius: 50px; /* Rounded corners */
+    background-color: #7c7b7b7f; /* Light gray background */
+    color: #ece7e7a7; /* Text color */
+    font-size: 12px; /* Font size for the text */
+    text-align: center; /* Centers the text */
+    display: inline-block;
   }
   .S2four {
     display: flex;
@@ -141,49 +142,74 @@ body {
     object-fit: cover;
     /* Ensures the image fits nicely */
   }
-  ul {
+  .commentfan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #111111;
+    width: 100%;
+  }
+  .amountofcomment {
+    padding-top: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .buttonlogin{
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border: none; 
+    background-color: #333; /* Dark button background */
+    color: #fff; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  ul{
     list-style: none;
   }
-  a {
-    text-decoration: none;
-    color: white;
+  .allinli{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
   }
-  .S2fourtextt a {
-    text-decoration: none;
-    color: white;
+  .picnameday{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+   
   }
-  .S2fourtextsecond {
-    color: rgba(255, 255, 255, 0.315);
+  .dayincomment{
+    color: rgba(240, 255, 255, 0.308);
   }
-  .allcomment {
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-    }
-    .headerpic{
-        width: 400px;
-        height: 400px;
-        padding-left: 100px;
-        padding-bottom: 100px;
-    }
-.picdiv img{
+  .picIncomment {
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    border: 2px solid #333; /* Optional border for styling */
+  }
+  
+  .picIncomment img {
     width: 100%;
     height: 100%;
-    border: 1px solid black;
-    border-radius: 6px;
-    overflow: hidden;
+    object-fit: cover;
+    /* Ensures the image fits nicely */
   }
-  .headerpic1{
-    width: 400px;
-    height: 400px;
-    padding-bottom: 200px;
-}
-.picdiv1{
-  width: 600px;
-  height: 600px;
-}
-.picdiv1 img{
-  width: 100%;
-  height: 100%;
-}
+  .nameincomment{
+    align-items: center;
+  }
+  .commenttext{
+      padding-left: 50px;
+  }
+  .emoji-container-add {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 10px;
+  }
+  .emoji-container-add button{
+    margin-bottom: 10px;
+  }
   
