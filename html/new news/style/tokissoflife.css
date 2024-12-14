@@ -34,6 +34,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 .allrob{
     display: flex;
     flex-direction: row;
@@ -56,30 +57,19 @@ a{
     font-size: 20px;
     padding-top: 22px;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.455);
-  }
-  .rob1 i{
-    width: 100%;
-    height: 100%;
-    font-size: 30px;
-    padding-top: 15px;
-    object-fit: cover;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   .header {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
-  .rob2 {
-    width: 30px;
-    height: 30px;
-  }
+ 
   
   h2 {
     font-size: 20px;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.825);
+    color: rgb(255, 255, 255);
   }
   .seconddiv{
     display: flex;
@@ -129,17 +119,12 @@ a{
     width: 100%;
     height: 100vh;
   }
-  svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    stroke: #fff; /* For stroke-based icons */
-    fill: none;   /* For non-filled icons */
-  }
   .noticeinpickiss{
-    font-size: 20px;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.455);
+        font-size: 20px;
+        padding-top: 22px;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+      
   }
   
 .Allofit{
@@ -160,6 +145,7 @@ ul{
     gap: 5px;
 }
 .privatepost{
+    padding-top: 10px;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.401);
 }

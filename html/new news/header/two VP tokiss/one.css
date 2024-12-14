@@ -1,13 +1,13 @@
-.content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 6%;
-    margin-top: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6%;
+  margin-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
-.left-content{
+.left-content {
   max-height: calc(100vh - 72px - 32px);
   height: -moz-fit-content;
   height: fit-content;
@@ -17,155 +17,140 @@
   top: 104px;
   padding-top: 0;
   padding-bottom: 0;
-    
 }
 .right-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: white;
-    font-family: Arial, sans-serif;
-    flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  flex: 1 1;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-.allrob{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-  .rob{
-    width: 40px;
-    height: 70px;
+.allrob {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
-.rob svg{
-    width: 100%;
-    height: 100%;
+.rob {
+  width: 40px;
+  height: 70px;
+}
+.rob svg {
+  width: 100%;
+  height: 100%;
 }
 .star {
-    color: rgb(167, 3, 3);
-    font-size: 24px;
-   padding: 20px 20px 0px 0px;
+  color: rgb(167, 3, 3);
+  font-size: 24px;
+  padding: 20px 20px 0px 0px;
 }
-.noticeinpic{
-    font-size: 20px;
-    padding-top: 22px;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.455);
-  }
-  .rob1 i{
-    width: 100%;
-    height: 100%;
-    font-size: 30px;
-    padding-top: 15px;
-    object-fit: cover;
-    color: white;
-  }
-  .header {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  .rob2 {
-    width: 30px;
-    height: 30px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.825);
-  }
-  .seconddiv{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.14) ;
-    background-color: black;
-  }
-  .text{
-    color:rgba(255, 255, 255, 0.438);
-  }
-  .lock{
-    font-size: 18px;
-  }
-  .thirddiv{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .viewpost{
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.459);
-    
-  }
-  .buttontwo{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-  }
-  button{
-    border: none;
-    outline: none;
-    background: transparent;
-  }
-  button i{
-    color: rgba(255, 255, 255, 0.469);
-  }
-  .horizonfour{
-    margin-top: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.147);
-  }
-  .fourdiv {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-  svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    stroke: #fff; /* For stroke-based icons */
-    fill: none;   /* For non-filled icons */
-  }
-  .noticeinpickiss{
-    font-size: 20px;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.455);
-  }
-  
-.Allofit{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.noticeinpic {
+  font-size: 20px;
+  padding-top: 22px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
 }
-ul{
-    list-style: none;
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
-.horizon{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.127);
-    padding-top: 20px;
+.rob2 {
+  width: 30px;
+  height: 30px;
 }
-.two{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+
+h2 {
+  font-size: 20px;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.825);
 }
-.privatepost{
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.401);
+.seconddiv {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  background-color: black;
 }
-.time{
-    color: rgba(255, 255, 255, 0.401);
+.text {
+  color: rgba(255, 255, 255, 0.438);
 }
-a{
-    text-decoration: none;
+.lock {
+  font-size: 18px;
+}
+.thirddiv {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.viewpost {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.459);
+}
+.buttontwo {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+button i {
+  color: rgba(255, 255, 255, 0.469);
+}
+.horizonfour {
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.147);
+}
+.fourdiv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.noticeinpickiss {
+  font-size: 20px;
+  padding-top: 22px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.Allofit {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ul {
+  list-style: none;
+}
+.horizon {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.127);
+  padding-top: 20px;
+}
+.two {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.privatepost {
+    padding-top: 10px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.401);
+}
+.time {
+  color: rgba(255, 255, 255, 0.401);
+}
+a {
+  text-decoration: none;
 }
