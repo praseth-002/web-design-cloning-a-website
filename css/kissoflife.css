@@ -141,6 +141,7 @@
 .membership-content i, .membership-content p {
     display: flex;
     justify-content: center;  
+    margin-top: 15px;
 }
 
 .membership-content i {
@@ -167,6 +168,7 @@
     height: 100vh;  
     object-fit: cover; 
     justify-items: center;
+    justify-content: center;
 }
 
 .update-social {
@@ -455,11 +457,13 @@
 
     .content {
         flex-direction: column;
-        padding: 10px;
+        padding-right: 15%;
+        margin-left: 10%;
+        margin-top: 8%;
     }
 
     .left-bar {
-        padding-top: 36px;
+        padding-top: 24px;
         flex-direction: row;
         width: 100%;
         margin: 0;
@@ -472,7 +476,7 @@
         align-items: center;
     }
 
-    .member-profile a{
+    .member-profile a {
         display: flex;
         flex-direction: column;
         margin-left: 10%;
@@ -499,10 +503,6 @@
 
     .current-member {
         background-color: #151515;
-    }
-
-    .current-member p {
-        margin-right: 15px;
     }
 
     .right-bar {
@@ -615,13 +615,14 @@
         top: 0;
     }
 
-    .member { 
+    .member, .current-member {
         display: flex;
         align-items: center;
         font-size: 12px;
+        width: 100%;
     }
 
-    .member-profile a {
+    .member-profile a, .current-member a {
         display: flex;
         flex-direction: column;
         margin-left: 10%;
@@ -656,16 +657,19 @@
         overflow: hidden;
     }
 
+    .post2 {
+        margin: 0 10%;
+    }
+
     .social-image {
         flex-direction: row;
-        gap: 30%;
         margin: 0;
-        margin-left: 10%;
     }
 
     .social-image img {
         width: 100%;
         height: 100vh;
+        justify-content: center;
     }
 
     .dots {
@@ -677,7 +681,7 @@
         height: 5px;
     }
 
-    .emoji-reaction {
+    .emoji-reaction2 {
         grid-template-columns: repeat(4, 1fr);
         gap: 8px;
         margin-top: 10px;
@@ -720,7 +724,10 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 10px;
+    }
+
+    .content {
+        margin-right: 15%;
     }
 
     .left-bar {
@@ -728,12 +735,11 @@
     }
 
     .right-bar {
-        width: 70%;
+        width: 80%;
     }
 
     .social-image {
         width: 100%;
-        gap: 40%;
     }
 
     .emoji-reaction {
@@ -755,6 +761,10 @@
         flex-direction: column;
         width: 100%;
         padding: 10px;
+    }
+
+    .left-bar {
+        width: 100%;
     }
 
     .right-bar {
@@ -784,19 +794,22 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 10px;
     }
 
-    .right-bar {
-        width: 70%;
+    .social-image img {
+        gap: 40%;
     }
 
-    .social-image {
-        gap: 30%;
+    .post2 {
+        width: 100%;
     }
 
     .emoji-reaction {
-        grid-template-columns: repeat(6,1fr);
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .emoji-reaction2{
+        grid-template-columns: repeat(5,1fr);
     }
 }
 
