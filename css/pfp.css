@@ -1,6 +1,6 @@
 .pfparea {
     width: 640px;
-    height: 173px;
+    min-height: 173px;
     background-color: #88888826;
     border-radius: 0.5em;
 }
@@ -18,18 +18,29 @@
 }
 
 .tophalf > div {
-    color: #777777;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.tophalf > div > h3 {
+.pfptxt {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pfptxt h3 {
     color: white;
 }
 
-.tophalf > div:last-child {
-    margin-left: auto;
+.pfptxt > p {
+    color: #777777;
+}
+
+.pfpsvg {
+    width: 24px;
+    height: 24px;
+    color: #777777;
 }
 
 .pfpline {
@@ -42,6 +53,7 @@
     padding: 20px 20px 16px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 }
 
 .btmhalf > div > h3 {
@@ -50,6 +62,7 @@
 
 .itemcontainer {
     padding-top: 24px;
+    width: 100%;
 }
 
 .itemcontainer > a {
@@ -58,7 +71,7 @@
 
 .items {
     height: 56px;
-    width: 640px;
+    width: 100%;
     color: #eeeeee;
     display: flex;
     align-items: center;
@@ -73,6 +86,10 @@
 
 .itemsline {
     border: 1px solid #ffffff0a;
+}
+
+p {
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 800px) {
