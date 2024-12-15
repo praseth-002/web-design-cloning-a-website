@@ -1,11 +1,11 @@
-* {
-    color: white;
-}
-
 a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+.content {
+    color: white;
 }
 
 .content-video-slideshow {
@@ -435,6 +435,10 @@ a{
     }
 
     .angle-left, .angle-right, .blank-space {
+        display: none;
+    }
+
+    .totop {
         display: none;
     }
 }
