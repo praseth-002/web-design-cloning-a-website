@@ -21,11 +21,10 @@ body {
 }
 
 .content {
-    width: 755px;
+    width: 640px;
     padding: 0 ;
     margin: 0 auto;
     min-height: 90vh;
-    font-size: 18px;
     
 }
 
@@ -143,7 +142,6 @@ footer > div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .totop > a > svg {
@@ -192,18 +190,24 @@ footer > div:first-child {
 
 
 .product-thumnail-banner {
-    width: 100%; /* Ensures the container spans the available width */
-    max-width: 755px; /* Restricts the width to a maximum of 755px */
-    height: auto; /* Allows height to adjust automatically */
-    margin: 0 auto; /* Centers the container horizontally */
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 640px; 
+    margin: 0 auto;
+}
+.banner-image-club{
+    width: 640px;
+    height: 640px;
 }
 
 .product-thumnail-banner img {
-    width: 100%; /* Makes the image fill the container */
-    height: auto; /* Maintains the aspect ratio */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    max-width: 755px; /* Ensures the image doesn’t exceed the desired width */
-    max-height: 755px; /* Ensures the image doesn’t exceed the desired height */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .product-summary{
@@ -340,7 +344,7 @@ footer{
     background-color: #151515;
     font-size: 13px;
     border-top: 1px solid #2f2f2f;
-    height: 90px;
+    height:73px;
     display: flex;
 }
 .footer-container{
@@ -348,17 +352,26 @@ footer{
     justify-content: center; 
     align-items: center; 
     height: 100%;
+    padding: 20px 0;
 }
 .group-button{
+    width: 100%; 
+    max-width: 640px;
     padding: 10px;
+    box-sizing: border-box;
 }
 .group-button button{
-    padding: 13px 295px;
-    border-radius: 10px;
+    width: 100%; 
+    padding: 10px 300px; 
+    border-radius: 5px;
     border: none;
     background-color: #554B70;
     font-size: 18px;
+    color: #fff; /* Optional: ensure text contrast */
+    text-align: center;
+    cursor: pointer; /* Add pointer cursor for better UX */
 }
+
 
 .product-ship{
     margin-top: 15px;
@@ -553,6 +566,37 @@ ul ::marker{
     padding-bottom: 80px;
 }
 
+.fixed-bar{
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid var(--user-mode-border-default-a);
+    background-color: #151515;
+    border-top: 1px solid #2c2c2c;
+}
+
+.group-button{
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 704px;
+}
+
+.button-sales-ended{
+    margin-top: 6px;
+    margin-bottom: 5px;
+    background-color: #554B70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+}
 
 /*test
 
