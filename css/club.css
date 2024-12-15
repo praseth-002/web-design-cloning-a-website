@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
+    
     box-sizing: border-box;
 }
 
@@ -16,8 +16,9 @@ body {
 
 .container {
     width: 100%;
+    max-width: 640px;
     margin: 0 auto;
-    margin-top: 68px;
+
 }
 
 .content {
@@ -157,13 +158,18 @@ footer > div:first-child {
 @media only screen and (max-width: 800px) {
     body{
         width: 100vw;
+        padding: 10px;
     }
     header > div > button {
         display: none;
     }
+    header{
+        width:100%;
+    }
 
     .content {
-        width: 100%;
+        max-width: 640px;
+        max-height: 640px;
         padding: 0px;
     }
 
@@ -173,17 +179,16 @@ footer > div:first-child {
 
 
     .product-thumnail-banner img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin-top: 50px;
-    
     }
 
     .product-thumnail-banner{
         width: 100%; 
         /* height: auto; */
         
+    }
+
+    #last{
+        padding-bottom: 100px;
     }
 }
 
@@ -197,17 +202,23 @@ footer > div:first-child {
     margin: 0 auto;
 }
 .banner-image-club{
-    width: 640px;
-    height: 640px;
+    max-width: 640px;
+    max-height: 640px;
 }
 
 .product-thumnail-banner img {
+    max-width: 640px;
+    max-height: 640px;
+
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 640px;
+    height: 640px;
     object-fit: cover;
     object-position: center;
+    overflow: hidden;
+    padding-right: 10px;
+    margin-top: 50px;
 }
 
 .product-summary{
@@ -336,43 +347,6 @@ footer > div:first-child {
     font-weight: lighter;
 }
 
-
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #151515;
-    font-size: 13px;
-    border-top: 1px solid #2f2f2f;
-    height:73px;
-    display: flex;
-}
-.footer-container{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%;
-    padding: 20px 0;
-}
-.group-button{
-    width: 100%; 
-    max-width: 640px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.group-button button{
-    width: 100%; 
-    padding: 10px 300px; 
-    border-radius: 5px;
-    border: none;
-    background-color: #554B70;
-    font-size: 18px;
-    color: #fff; /* Optional: ensure text contrast */
-    text-align: center;
-    cursor: pointer; /* Add pointer cursor for better UX */
-}
-
-
 .product-ship{
     margin-top: 15px;
     color:#919191;
@@ -415,6 +389,7 @@ footer{
 
 .text > p{
     font-weight: lighter;
+    font-size: 16px;
 }
 
 .line{
@@ -438,7 +413,7 @@ font-weight: lighter;
 .red-text{
     color: #B23A2A;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -584,9 +559,16 @@ ul ::marker{
     padding-left: 32px;
     padding-right: 32px;
     max-width: 704px;
+    width: 100%; 
+    max-width: 640px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
+
+
 .button-sales-ended{
+    
     margin-top: 6px;
     margin-bottom: 5px;
     background-color: #554B70;
@@ -596,9 +578,14 @@ ul ::marker{
     height: 40px;
     border-radius: 5px;
     font-size: 15px;
+    padding: auto;
 }
 
-/*test
+
+
+
+
+
 
 
 
