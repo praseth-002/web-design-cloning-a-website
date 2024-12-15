@@ -174,7 +174,7 @@ footer > div:first-child {
     height: 48px;
 
     position: fixed;
-    left: 90vw;
+    right: 10vw;
     bottom:10vh;
     background-color: #000000;
     border-radius: 50px;
@@ -263,5 +263,10 @@ footer > div:first-child {
     .mobile-nav > div > a > svg {
         max-width: 24px;
         max-height: 24px;
+    }
+
+    .totop > a {
+        bottom: 68px;
+        right: 10px;
     }
 }
