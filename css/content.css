@@ -437,4 +437,8 @@ a{
     .angle-left, .angle-right, .blank-space {
         display: none;
     }
+
+    .totop {
+        display: none;
+    }
 }
