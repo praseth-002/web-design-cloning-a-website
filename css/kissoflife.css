@@ -49,7 +49,6 @@
     height: 56px;
     font-size: 12px;
     border-radius: 4px;
-    gap: 30px;
     margin-right: 10px;
 }
 
@@ -172,6 +171,7 @@
 }
 
 .update-social {
+    border-radius: 5px;
     overflow-y: auto; 
     height: 100vh;
     scroll-snap-type: y mandatory; 
@@ -241,6 +241,10 @@
     width: 100%;
 }
 
+.profile-name {
+    margin-left: 7px;
+}
+
 .small-profile img{
     width: 25px;
     height: 25px;
@@ -249,6 +253,7 @@
 
 .small-profile-text {
     margin-top: 12px;
+    margin-left: 8px;
 }
 
 .emoji-reaction {
@@ -457,9 +462,6 @@
 
     .content {
         flex-direction: column;
-        padding-right: 15%;
-        margin-left: 10%;
-        margin-top: 8%;
     }
 
     .left-bar {
@@ -468,7 +470,7 @@
         width: 100%;
         margin: 0;
         position: relative;
-        top: 0;
+        top: 20px;
     }
     
     .member { 
@@ -479,7 +481,6 @@
     .member-profile a {
         display: flex;
         flex-direction: column;
-        margin-left: 10%;
     }
 
     .member-profile p {
@@ -492,8 +493,8 @@
     }
 
     .small-profile img {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
 
     .member, .current-member, .profile-comment {
@@ -506,26 +507,35 @@
     }
 
     .right-bar {
-        justify-content: center;
-        width: 100%;
+        width: 100vw;
         margin: 0;
         display: flex;
         flex-direction: column;
     }
 
+    .upper-right:first-child {
+        margin-top: 52px;
+    }
+
+    .three-dots {
+        margin-right: 15px;
+    }
+
     .social-image {
         flex-direction: row;
-        padding: 0 30px;
         margin: 0;
     }
 
     .update-social {
-        background-color: #151515;
+        background-color: #222121; 
+        margin: auto;
+        height: 75vh;
+        width: 90%;
     }
 
     .social-image img {
         width: 100%;
-        height: 100vh;
+        height: 75vh;
     }
 
     .dots {
@@ -543,28 +553,30 @@
         gap: 5px;
     }
 
+    .small-profile-text {
+        margin-bottom: 3px;
+    }
+
     .emoji-reaction {
         grid-template-columns: repeat(4, 1fr);
-        gap: 8px;
-        margin-top: 10px;
     }
 
     .emoji {
-        width: 60px;
-        height: 30px;
         display: flex;
         justify-content: center;
+        justify-self: flex-start;
     }
 
     .emoji img {
         width: 20px;
         height: 20px;
+        margin-top: 3px;
+        margin-right: 2px;
     } 
 
     .comment-section {
         width: 100%;
         margin: 0;
-        margin-left: 8%;
     }
 
     .emoji-reaction2 {
@@ -573,6 +585,17 @@
         margin-top: 10px;
     }
 
+    .interaction {
+        margin-left: 0;
+    }
+
+    .interaction-fan {
+        margin-left: 0;
+    }
+
+    .emoji2 {
+        margin-left: 12px;
+    }
     .star-profile img {
         width: 20px;
         height: 20px;
@@ -642,14 +665,19 @@
         height: 40px;
     }
 
+    .upper-right:first-child {
+        margin-top: 52px;
+    }
+
     .current-member {
         background-color: #151515;
         font-size: 12px;
     }
 
     .right-bar {
-        width: 100%;
+        width: 90%;
         margin: 0;
+        margin-left: 5%;
     }
 
     .post {
@@ -681,6 +709,10 @@
         height: 5px;
     }
 
+    .emoji-reaction {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
     .emoji-reaction2 {
         grid-template-columns: repeat(4, 1fr);
         gap: 8px;
@@ -688,10 +720,13 @@
     }
 
     .emoji {
-        width: 60px;
-        height: 30px;
         display: flex;
         justify-content: center;
+        gap: 2.5px;
+    }
+
+    .emoji p {
+        margin-top: 2.5px;
     }
 
     .emoji img {
@@ -702,7 +737,6 @@
     .comment-section {
         width: 100%;
         margin: 0;
-        margin-left: 5%;
     }
 
     .star-profile img {
@@ -735,15 +769,21 @@
     }
 
     .right-bar {
-        width: 80%;
+        width: 65%;
     }
 
     .social-image {
         width: 100%;
+        padding: 0;
     }
 
     .emoji-reaction {
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;
+    }
+
+    .emoji {
+        margin-top: 5px;
     }
 
     .comment-section {
@@ -752,6 +792,7 @@
 
     .emoji-reaction2 {
         grid-template-columns: repeat(4,1fr);
+        margin: auto;
     }
 }
 
@@ -796,8 +837,17 @@
         width: 100%;
     }
 
+    .right-bar {
+        width: 65%;
+    }
+
+    .social-image {
+        gap: 25%;
+    }
+
     .social-image img {
-        gap: 40%;
+        padding-left: 7.5%;
+        background-color: #222121;
     }
 
     .post2 {
@@ -805,15 +855,54 @@
     }
 
     .emoji-reaction {
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(7,1fr);
     }
 
     .emoji-reaction2{
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(7,1fr);
+    }
+
+    .comment-section {
+        width: 60%;
+        margin: 0 20%;
     }
 }
 
+@media only screen and (min-width: 1201px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
+    .right-bar {
+        width: 65%;
+    }
 
+    .social-image {
+        gap: 25%;
+    }
 
+    .social-image img {
+        padding-left: 7.5%;
+        background-color: #222121;
+    }
 
+    .post2 {
+        width: 100%;
+    }
+
+    .emoji-reaction {
+        grid-template-columns: repeat(7,1fr);
+    }
+
+    .emoji-reaction2{
+        grid-template-columns: repeat(7,1fr);
+    }
+
+    .comment-section {
+        width: 60%;
+        margin: 0 20%;
+    }
+}
+    
