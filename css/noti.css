@@ -1,0 +1,126 @@
+h2 {
+    color: white;
+    padding: 12px 0px 8px;
+}
+
+.notinav {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+    border-bottom: 1px solid #ffffff0a;
+    justify-content: space-between;
+
+}
+
+.notinav > div:first-of-type {
+    overflow-x: scroll;
+    display: flex;
+    scrollbar-color: transparent transparent;
+    gap: 15px;
+    width: 280px;
+}
+
+.notinavmem {
+    min-width: 27px;
+    height: 48px;
+    text-align: center;
+}
+
+
+
+#activer {
+    color: white;
+}
+
+.notinavmem > a {
+    text-decoration: none;
+    color: #777777;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+.notinavmem:first-child > a {
+    border-bottom: 3px solid white;
+}
+
+.notinav > div > svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+    margin-top: 50%;
+}
+
+.notiitems  > a{
+    min-height: 80px;
+    width: 100%;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.notiitems > a {
+    text-decoration: none;
+}
+
+.notiitems > a >div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.itemstop {
+    display: flex;
+}
+
+.topleft1 {
+    flex-grow: 1;
+    color: white;
+    display: flex;
+    /* gap: 8px; */
+    align-items: center;
+    font-size: 14px;
+}
+
+.name {
+    white-space: nowrap;
+}
+
+.topleft1 > img {
+    width: 24px;
+    height: 24px;
+    border: 2px solid black;
+    border-radius: 1.5em;
+    outline: 1px solid #E0A0FC;
+    margin-right: 9px;
+}
+
+.topleft1 > svg {
+    min-width: 20px;
+    min-height: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 4px;
+    color: #E0A0FC;
+}
+
+.topright > img{
+    width: 56px;
+    height: 56px;
+    border-radius: 0.5em;
+    object-fit: cover;
+    margin-left: 10px;
+
+}
+
+.itemsbtm {
+    color: #777777;
+    font-size: 12px;
+}

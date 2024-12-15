@@ -1,3 +1,6 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .content{
     display: flex;
     flex-direction: row;
@@ -24,12 +27,19 @@
     font-family: Arial, sans-serif;
     flex: 1 1;
 }
-ul{
-    list-style: none;
+.left-content> div > button {
+  border: none;
+  padding: 10px 8px;
+  background-color: #151515;
+  color: #7a7a7a;
+  font-weight: bold;
 }
-a{
-    text-decoration: none;
-    color: white;
+.left-content > div > button > a{
+  text-decoration: none;
+  color: #7a7a7a;
+}
+.holder{
+  color: white;
 }
 .allrob{
     display: flex;
@@ -37,8 +47,8 @@ a{
     gap: 20px;
   }
   .rob{
-    width: 40px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
 }
 .rob svg{
     width: 100%;
@@ -47,22 +57,17 @@ a{
 .star {
     color: rgb(167, 3, 3);
     font-size: 24px;
-   padding: 20px 20px 0px 0px;
+   padding: 0px 20px 0px 0px;
 }
 .noticeinpic{
-    font-size: 20px;
-    padding-top: 22px;
+    font-size: 18px;
+    padding-top: 5px;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.455);
+    color: rgba(255, 255, 255, 0.997);
   }
-  .rob1 i{
-    width: 100%;
-    height: 100%;
-    font-size: 30px;
-    padding-top: 15px;
-    object-fit: cover;
-    color: white;
-  }
+.holder{
+  color: white;
+}
   .horizon{
     padding-top: 20px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.137);
