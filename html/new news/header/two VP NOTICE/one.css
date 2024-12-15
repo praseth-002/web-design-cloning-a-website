@@ -19,19 +19,15 @@
   padding-bottom: 0;
     
 }
-.left-content> div > button {
-  border: none;
+.left-content > div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#holder{
+  background-color: rgba(128, 128, 128, 0.274);
+  border-radius: 5px;
   padding: 10px 8px;
-  background-color: #151515;
-  color: #7a7a7a;
-  font-weight: bold;
-}
-.left-content > div > button > a{
-  text-decoration: none;
-  color: #7a7a7a;
-}
-.holder{
-  color: white;
 }
 .allrob{
     display: flex;
@@ -53,14 +49,20 @@ a{
   border-right: 1px solid rgba(255, 255, 255, 0.295);
   margin-right: 18px;
 }
-.star {
-    color: rgb(167, 3, 3);
-    font-size: 24px;
-   padding: 0px 20px 0px 0px;
+.BoardItem_newDot__SKAU7 {
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 4px;
+  vertical-align: top;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ff4747;
 }
 .noticeinpic{
     font-size: 18px;
     padding-top: 5px;
+    font-weight: bold;
     justify-content: center;
     color: rgba(255, 255, 255, 0.997);
   }
@@ -89,7 +91,18 @@ a{
     padding-top: 10px;
   }
   .pinned-left {
-    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 10px;
+    justify-content: center;
+  }
+  .text-pinneddd{
+    color: #e7e1e1;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 5px;
+    justify-content: center;
   }
   .pinned-right {
     padding-right: 20px;
@@ -113,6 +126,7 @@ a{
   }
   .text-element-right {
     padding-right: 10px;
+    color:#ffffff80;
   }
   .viewpost-container {
     display: grid;

@@ -11,6 +11,8 @@ body{
     padding-right: 32px;
 }
 .left-content{
+  display: flex;
+  flex-direction: column;
   max-height: calc(100vh - 72px - 32px);
   height: -moz-fit-content;
   height: fit-content;
@@ -22,24 +24,19 @@ body{
   padding-bottom: 0;
     
 }
-
+.left-content > div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#holder{
+  background-color: rgba(128, 128, 128, 0.274);
+  border-radius: 5px;
+  padding: 10px 8px;
+}
 a{
     text-decoration: none;
     color: white;
-}
-.left-content> div > button {
-  border: none;
-  padding: 10px 8px;
-  background-color: #151515;
-  color: #7a7a7a;
-  font-weight: bold;
-}
-.left-content > div > button > a{
-  text-decoration: none;
-  color: #7a7a7a;
-}
-.holder{
-  color: white;
 }
 .allrob{
     display: flex;
@@ -54,13 +51,19 @@ a{
     width: 100%;
     height: 100%;
 }
-.star {
-    color: rgb(167, 3, 3);
-    font-size: 24px;
-   padding: 0px 20px 0px 0px;
+.BoardItem_newDot__SKAU7 {
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 4px;
+  vertical-align: top;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ff4747;
 }
 .noticeinpic{
     font-size: 18px;
+    font-weight: bold;
     padding-top: 5px;
     justify-content: center;
     color: rgba(255, 255, 255, 0.997);
@@ -126,6 +129,7 @@ a{
   }
   .text-element-right {
     padding-right: 10px;
+    color: #ffffff80;
   }
   .viewpost-container {
     display: grid;
@@ -146,7 +150,6 @@ a{
     color: rgba(255, 255, 255, 0.856);
     padding-right: 5px;
   }
-  
 .alloffoot {
     color: white;
     font-family: Arial, sans-serif;
