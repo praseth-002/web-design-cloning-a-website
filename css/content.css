@@ -1,11 +1,11 @@
-* {
-    color: white;
-}
-
 a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+.content {
+    color: white;
 }
 
 .content-video-slideshow {
