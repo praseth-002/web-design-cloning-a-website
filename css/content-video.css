@@ -304,7 +304,7 @@ header > div > img {
         display: none;
     }
 
-    .mobile-back {
+    .pfphone {
         display: none;
     }
 }
@@ -334,7 +334,8 @@ header > div > img {
         display: none;
     }
 
-    .mobile-back {
+    .pfphone {
+        display: block;
         color: white;
     }
 
@@ -388,6 +389,23 @@ header > div > img {
 
     .descriptions {
         display: none;
+    }
+
+    .pfphome {
+        display: flex;
+    }
+
+    .pfphome > div {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pfphome > div > a > svg {
+        min-width: 24px;
+        min-height: 24px;
+        color: #ffffff;
     }
 }
 
