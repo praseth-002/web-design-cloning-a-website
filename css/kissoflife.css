@@ -1,5 +1,12 @@
 * {
     text-decoration: none;
+}
+
+p {
+    color: white;
+}
+
+i {
     color: white;
 }
 
@@ -19,13 +26,13 @@
 .totop > a > svg {
     width: 24px;
     height: 24px;
-    color: white;
 }
 
 .content {
     min-height: 40vh;
     display: flex;
     position: relative;
+    color: white;
 }
 
 .left-bar {
