@@ -565,7 +565,7 @@ i {
     }
 
     .emoji-reaction {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .emoji {
@@ -587,7 +587,7 @@ i {
     }
 
     .emoji-reaction2 {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 8px;
         margin-top: 10px;
     }
@@ -632,7 +632,6 @@ i {
 
     .content {
         flex-direction: column;
-        padding: 10px;
     }
 
     .left-bar {
@@ -643,6 +642,7 @@ i {
         margin: 0;
         position: relative;
         top: 0;
+        margin-top: 2.5%;
     }
 
     .member, .current-member {
@@ -699,6 +699,147 @@ i {
     .social-image {
         flex-direction: row;
         margin: 0;
+        padding: 0 20%;
+        gap: 35%;
+    }
+
+    .social-image img {
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    .dots {
+        gap: 4px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    .emoji-reaction {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .emoji-reaction2 {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .emoji {
+        display: flex;
+        justify-content: center;
+        gap: 2.5px;
+    }
+
+    .emoji p {
+        margin-top: 2.5px;
+    }
+
+    .emoji img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .comment-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .star-profile img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .star-profile p {
+        font-size: 12px;
+    }
+
+    .comment-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left-bar {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        margin: 0;
+        position: relative;
+        top: 0;
+        margin-top: 2.5%;
+    }
+
+    .member, .current-member {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .member-profile a, .current-member a {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .member-profile p {
+        margin-right: 15px;
+    }
+
+    .member-profile img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .small-profile img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .upper-right:first-child {
+        margin-top: 52px;
+    }
+
+    .current-member {
+        background-color: #151515;
+        font-size: 12px;
+    }
+
+    .right-bar {
+        width: 80%;
+        margin: 0;
+        margin-left: 10%;
+    }
+
+    .post {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .post2 {
+        margin: 0 10%;
+    }
+
+    .social-image {
+        flex-direction: row;
+        margin: 0;
+        gap: 30%;
     }
 
     .social-image img {
@@ -760,50 +901,284 @@ i {
     }
 }
 
-@media only screen and (min-width:541px) and (max-width: 768px) {
+@media only screen and (min-width: 601px ) and (max-width:700px) {
     .container {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 10px;
     }
 
     .content {
-        margin-right: 15%;
+        flex-direction: column;
     }
 
     .left-bar {
-        width: 35%;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        margin: 0;
+        position: relative;
+        top: 0;
+        margin-top: 2.5%;
+    }
+
+    .member, .current-member {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .member-profile a, .current-member a {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .member-profile p {
+        margin-right: 15px;
+    }
+
+    .member-profile img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .small-profile img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .upper-right:first-child {
+        margin-top: 52px;
+    }
+
+    .current-member {
+        background-color: #151515;
+        font-size: 12px;
     }
 
     .right-bar {
-        width: 65%;
+        width: 70%;
+        margin: 0;
+        margin-left: 15%;
+    }
+
+    .post {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .post2 {
+        margin: 0 15%;
     }
 
     .social-image {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .social-image img {
         width: 100%;
-        padding: 0 15%;
+        height: 80vh;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .dots {
+        gap: 4px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
     }
 
     .emoji-reaction {
-        grid-template-columns: repeat(4,1fr);
-        gap: 5px;
-    }
-
-    .emoji {
-        margin-top: 5px;
-    }
-
-    .comment-section {
-        width: 70%; 
+        grid-template-columns: repeat(5,1fr);
     }
 
     .emoji-reaction2 {
-        grid-template-columns: repeat(4,1fr);
-        margin: auto;
+        grid-template-columns: repeat(6,1fr);
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .emoji {
+        display: flex;
+        justify-content: center;
+        gap: 2.5px;
+    }
+
+    .emoji p {
+        margin-top: 2.5px;
+    }
+
+    .emoji img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .comment-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .star-profile img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .star-profile p {
+        font-size: 12px;
+    }
+
+    .comment-section {
+        width: 100%;
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1028px) {
+@media only screen and (min-width: 701px) and (max-width:800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left-bar {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        margin: 0;
+        position: relative;
+        top: 0;
+        margin-top: 2.5%;
+    }
+
+    .member, .current-member {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .member-profile a, .current-member a {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .member-profile p {
+        margin-right: 15px;
+    }
+
+    .member-profile img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .small-profile img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .upper-right:first-child {
+        margin-top: 52px;
+    }
+
+    .current-member {
+        background-color: #151515;
+        font-size: 12px;
+    }
+
+    .right-bar {
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    .post {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .post2 {
+        margin: 0 15%;
+    }
+
+    .social-image {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .social-image img {
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        margin: 0 12.5% 0 7.5%;
+    }
+
+    .dots {
+        gap: 4px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    .emoji-reaction {
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .emoji-reaction2 {
+        grid-template-columns: repeat(6,1fr);
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .emoji {
+        display: flex;
+        justify-content: center;
+        gap: 2.5px;
+    }
+
+    .emoji p {
+        margin-top: 2.5px;
+    }
+
+    .emoji img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .comment-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .star-profile img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .star-profile p {
+        font-size: 12px;
+    }
+
+    .comment-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1028px) {
     .container {
         display: flex;
         flex-direction: column;
