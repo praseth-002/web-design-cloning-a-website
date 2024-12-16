@@ -27,22 +27,17 @@ body{
   flex-direction: column;
   gap: 10px;
 }
-#holder{
-  background-color: rgba(128, 128, 128, 0.274);
-  border-radius: 5px;
-  padding: 10px 8px;
-}
 .right-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: white;
-    font-family: Arial, sans-serif;
-    flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  flex: 1 1;
 }
 a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .allrob{
@@ -50,9 +45,18 @@ a{
   flex-direction: row;
   gap: 20px;
 }
+#holder{
+  background-color: rgba(128, 128, 128, 0.274);
+  border-radius: 5px;
+  padding: 10px 8px;
+  font-weight: bold;
+  color: white;
+ 
+}
 .rob{
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
+    color: #999999;
 }
 .rob svg{
     width: 100%;
@@ -71,10 +75,21 @@ a{
 .noticeinpic{
     font-size: 18px;
     padding-top: 5px;
-    font-weight: bold;
     justify-content: center;
-    color: rgb(255, 255, 255);
-  }
+    color: #999999;
+    
+}
+.noticeinpicnotice{
+  font-size: 18px;
+  padding-top: 5px;
+  justify-content: center;
+  color: white;
+}
+.robnotice{
+  width: 30px;
+  height: 30px;
+  color: white;
+}
   .header {
     display: flex;
     flex-direction: row;

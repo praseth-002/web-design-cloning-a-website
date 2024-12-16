@@ -32,11 +32,6 @@ body{
     flex-direction: column;
     gap: 10px;
   }
-  #holder{
-    background-color: rgba(128, 128, 128, 0.274);
-    border-radius: 5px;
-    padding: 10px 8px;
-  }
   a{
     text-decoration: none;
     color: white;
@@ -47,13 +42,22 @@ body{
     background: transparent;
   }
   .allrob{
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-    }
-    .rob{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #holder{
+    background-color: rgba(128, 128, 128, 0.274);
+    border-radius: 5px;
+    padding: 10px 8px;
+    font-weight: bold;
+    color: white;
+   
+  }
+  .rob{
       width: 30px;
       height: 30px;
+      color: #999999;
   }
   .rob svg{
       width: 100%;
@@ -72,14 +76,23 @@ body{
   .noticeinpic{
       font-size: 18px;
       padding-top: 5px;
-      font-weight: bold;
       justify-content: center;
-      color: rgba(255, 255, 255, 0.997);
+      color: #999999;
       
-    }
-.holder{
+  }
+  .noticeinpicnotice{
+    font-size: 18px;
+    padding-top: 5px;
+    justify-content: center;
     color: white;
-}
+    font-weight: bold;
+  }
+  .robnotice{
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+
 .horizonn{
     padding: 8px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.096);
