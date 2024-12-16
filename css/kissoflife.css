@@ -171,7 +171,7 @@ i {
 .social-image img {
     background-color: black;
     width: 100%; 
-    height: 100vh;  
+    height: 80vh;  
     object-fit: cover; 
     justify-items: center;
     justify-content: center;
@@ -180,7 +180,7 @@ i {
 .update-social {
     border-radius: 5px;
     overflow-y: auto; 
-    height: 100vh;
+    height: 80vh;
     scroll-snap-type: y mandatory; 
     scrollbar-width: none; 
     -ms-overflow-style: none;
@@ -514,7 +514,7 @@ i {
     }
 
     .right-bar {
-        width: 100vw;
+        width: 100%;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -703,7 +703,7 @@ i {
 
     .social-image img {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         justify-content: center;
     }
 
@@ -781,7 +781,7 @@ i {
 
     .social-image {
         width: 100%;
-        padding: 0;
+        padding: 0 15%;
     }
 
     .emoji-reaction {
@@ -820,6 +820,7 @@ i {
     }
 
     .social-image {
+        padding: 0 20%;
         gap: 35%;
     }
 
@@ -849,7 +850,8 @@ i {
     }
 
     .social-image {
-        gap: 25%;
+        gap: 30%;
+        padding: 0 20%;
     }
 
     .social-image img {
@@ -871,7 +873,7 @@ i {
 
     .comment-section {
         width: 60%;
-        margin: 0 20%;
+        margin: 0 30%;
     }
 }
 
@@ -887,7 +889,8 @@ i {
     }
 
     .social-image {
-        gap: 25%;
+        gap: 35%;
+        padding: 0 20%;
     }
 
     .social-image img {
@@ -909,7 +912,7 @@ i {
 
     .comment-section {
         width: 60%;
-        margin: 0 20%;
+        margin: 0 25%;
     }
 }
     
