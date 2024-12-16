@@ -1,0 +1,228 @@
+h2 {
+    color: #eeeeee;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 88px;
+    z-index: 99;
+    background-color: #151515;
+
+}
+
+.bigger {
+    height: 16px;
+    width: 100%;
+    background-color: #151515;
+    position: sticky;
+    top: 72px;
+    z-index: 99;
+}
+
+.titleL, .titleR {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.titleL > svg, .titleR > a > svg{
+    color: #eeeeee;
+    width: 24px;
+    height: 24px;
+}
+
+.titleR {
+    gap: 16px;
+}
+
+.titleR > a > svg {
+    margin: 0 4px;
+}
+
+.filter {
+    padding: 16px 0;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: sticky;
+    top: 116px;
+    z-index: 99;
+    background-color: #151515;
+}
+
+.filteritems {
+    color: #eeeeee;
+    padding: 7px 12px;
+    border-radius: 1.5em;
+    border: 1px solid #ffffff1a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.circlecolour {
+    width: 9px;
+    height: 9px;
+    border-radius: 1.5em;
+}
+
+.datecontainer {
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+.datetop {
+    padding: 16px 0px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 197px;
+    z-index: 98;
+    background-color: #151515;
+}
+
+.datetop > div:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.datetop > div:last-child {
+    font-size: 14px;
+    color: #777777;
+}
+
+.datebtm {
+    margin-top: 8px;
+    padding: 16px;
+    display: flex;
+    gap: 10px;
+    border: 1px solid #ffffff1a;
+    border-radius: 0.5em;
+}
+
+.datecircle {
+    width: 12px;
+    height: 12px;
+    border-radius: 1.5em;
+    margin-top: 2px;
+}
+
+.datetxt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datepfp {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.datepfp > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.datepfp > div > img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 1.5em;
+}
+
+.datetime {
+    font-size: 14px;
+    color: #bababa;
+}
+
+.liner {
+    background-color: #ffffff0a;
+    height: 1px;
+    width: 100%;
+    margin: 24px 0 ;
+}
+
+.monthbtns {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.monthbtns > button {
+    height: 40px;
+    padding: 0 24px;
+    border: 1px solid #ffffff1a;
+    border-radius: 0.5em;
+    background-color: transparent;
+    color: #eeeeee;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .title {
+        top: 64px;
+    }
+
+    .bigger {
+        top: 48px;
+    }
+
+    .datetop {
+        top: 92px;
+    }
+
+    #bye {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        position: absolute;
+
+    }
+
+    .filterbtm {
+        position: fixed;
+        bottom: 0px;
+        border-top: 1px solid #ffffff0a;
+        padding: 16px 0;
+        width: calc(100% - 32px);
+        overflow-x: scroll;
+        scrollbar-color: transparent transparent;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        z-index: 100;
+        background-color: #151515;
+    }
+}
