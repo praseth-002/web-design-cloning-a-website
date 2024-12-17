@@ -1,0 +1,30 @@
+.content > div {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.subop {
+    display: flex;
+    flex-direction: column;
+}
+
+.subitems {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff1a;
+    color: white;
+}
+
+.subitems:last-child {
+    border-bottom: none;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    color: #777777;
+}
