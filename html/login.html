@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #151515;
+        }
+
+        .back {
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8px 24px 8px 0;
+        }
+        
+        .back > a > svg{
+            margin-left: 24px;
+            width: 24px;
+            height: 24px;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: calc(704px - 64px);
+            padding: 32px 32px 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logo {
+            padding: 8px 48px;
+            max-width: 640px;
+            max-height: 146px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo > img {
+            width: 200px;
+            height: 56px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        input {
+            height: 48px;
+            width: 100%;
+            background-color: #ffffff0f;
+            border: 1px solid transparent;
+            border-radius: 0.5em;
+            padding: 0px 20px;
+            color: #ffffff;
+
+        }
+
+        input:focus, input:active {
+            border: 1px solid #777777;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="back">
+        <a href="pfp.html">
+            <svg fill="none" viewBox="0 0 24 24" id="default--angleLeft-line-24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#atclip0_1260_285)"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.28 4.47a.75.75 0 00-1.06 0l-7 7a.75.75 0 000 1.06l7 7a.75.75 0 101.06-1.06L8.81 12l6.47-6.47a.75.75 0 000-1.06z" fill="currentColor"></path></g><defs><path fill="currentColor" d="M0 0h24v24H0z"></path></defs></svg>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://image.static.bstage.in/cdn-cgi/image/metadata=none,dpr=2,width=150/kissoflife/753c637e-188b-498a-9dff-5c7652de64ed/c951a62b-b1b2-4e6b-b51a-27d0d1c44ecb/ori.png" alt="">
+        </div>
+
+        <form>
+            <input type="text" placeholder="Enter email address">
+            <input type="password" placeholder="Enter password">
+        </form>
+
+    </div>
+    
+</body>
+</html>
