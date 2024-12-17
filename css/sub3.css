@@ -1,6 +1,7 @@
 .content > div {
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 0px;
 }
 
 .subop {
