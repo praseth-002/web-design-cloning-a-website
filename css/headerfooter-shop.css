@@ -23,6 +23,34 @@ body {
 
 /* new more responsive content container */
 
+.headerr {
+    padding-right: 32px;
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.headerr > div {
+    width: 24px;
+    height: 24px;
+    margin: 8px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerr > div > a > svg {
+    min-width: 24px;
+    min-height: 24px;
+    color: white;
+}
+
+.headerr > div > a > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 1.5em;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -53,7 +81,7 @@ header {
 
 header > div{
     max-width: 1080px;
-    height: 68px;
+    height: 72px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,6 +91,10 @@ header > div{
     padding: 8px 0;
     z-index: 100;
 }
+
+/* header > .headerr {
+    justify-content: flex;
+} */
 
 header > div > button {
     border: none;
@@ -169,6 +201,10 @@ footer > div:first-child {
 }
 
 @media only screen and (max-width: 800px) {
+    headerr {
+        padding-right: 16px;
+    }
+
     body{
         width: 100vw;
     }
