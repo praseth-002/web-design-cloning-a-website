@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color: white; */
 }
 
 body {
@@ -18,16 +17,17 @@ header {
     z-index: 100;
     position: fixed;
     background-color: #151515;
+    display: flex;
 }
 
 header > div{
-    height: 68px;
+    height: 72px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     background-color: #151515;
-    margin: 0 auto;
+    margin: 0;
     padding: 8px 0;
     z-index: 100;
 }
@@ -51,6 +51,34 @@ header > div > img {
     margin: 0 2em;
 }
 
+.headerr {
+    padding-right: 32px;
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.headerr > div {
+    width: 24px;
+    height: 24px;
+    margin: 8px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerr > div > a > svg {
+    min-width: 24px;
+    min-height: 24px;
+    color: white;
+}
+
+.headerr > div > a > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 1.5em;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -58,22 +86,11 @@ header > div > img {
 }
 
 .content {
-    padding: 0;
-    margin: 0 auto;
-    height: 100vh;
-    display: flex;
-    overflow: hidden;
     color: white;
 }
 
 .video::-webkit-scrollbar, .comments::-webkit-scrollbar {
     display: none;
-}
-
-.video {
-    box-sizing: border-box;
-    flex: 1 1;
-    overflow-y: auto;
 }
 
 .video-player {
@@ -102,6 +119,11 @@ header > div > img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    gap: 8px;
+}
+
+.title i {
+    color: gray;
 }
 
 .air-date {
@@ -165,14 +187,6 @@ header > div > img {
     text-decoration: none;
 }
 
-.comments {
-    width: 400px;
-    background-color: #111111;
-    overflow-y: auto;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
 .comments-header {
     font-size: 16px;
     font-weight: 500;
@@ -189,21 +203,19 @@ header > div > img {
     padding: 0 12px;
     margin-bottom: 16px;
     border-radius: 8px;
+    font-weight: normal;
 }
 
 .add-comment i {
     margin-right: 16px;
 }
 
-.all-comments {
-
-}
-
 .mini-comment {
     box-sizing: border-box;
-    padding: 20px 0;
+    padding: 16px 0;
     display: flex;
     width: 100%;
+    color: rgba(255, 255, 255, 0.755);
 }
 
 .avatar {
@@ -251,6 +263,7 @@ header > div > img {
 
 .comment-content {
     margin-bottom: 4px;
+    font-weight: normal;
 }
 
 .reactions p {
@@ -264,7 +277,37 @@ header > div > img {
 
 
 
+@media only screen and (min-width: 801px) {
+    .content {
+        padding: 0;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+    }
 
+    .video {
+        box-sizing: border-box;
+        flex: 1 1;
+        overflow-y: scroll;
+    }
+
+    .comments {
+        width: 400px;
+        background-color: #111111;
+        overflow-y: scroll;
+        padding: 0 32px;
+        box-sizing: border-box;
+    }
+
+    .mobile-title {
+        display: none;
+    }
+
+    .pfphone {
+        display: none;
+    }
+}
 
 
 
@@ -279,16 +322,90 @@ header > div > img {
 
 /* header */
 @media only screen and (max-width: 800px) {
-    body{
+    body {
         width: 100vw;
     }
+
     header > div > button {
         display: none;
     }
 
-    .content {
-        padding: 0px;
+    header > div > img {
+        display: none;
     }
 
-    
+    .pfphone {
+        display: block;
+        color: white;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+        top: 0;
+        z-index: 50;
+        overflow: visible;
+        height: 100%;
+    }
+
+    .video-player {
+        position: sticky;
+        z-index: 100; 
+        top: 68px;
+    }
+
+    .player {
+        display: block;
+        position: absolute;
+    }
+
+    .comments {
+        width: 100%;
+        padding: 0 16px;
+        background-color: #111111;
+    }
+
+    .add-comment, .mini-comment {
+        justify-content: center;
+    }
+
+    .mobile-title {
+        padding-bottom: 26px;
+        font-size: 14px;
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .mobile-title span {
+        color: rgb(94, 94, 94);
+    }
+
+    .descriptions {
+        display: none;
+    }
+
+    .pfphome {
+        display: flex;
+    }
+
+    .pfphome > div {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pfphome > div > a > svg {
+        min-width: 24px;
+        min-height: 24px;
+        color: #ffffff;
+    }
 }
+

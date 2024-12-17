@@ -8,6 +8,7 @@
 }
 
 @media only screen and (max-width: 800px) {
+
     header > div > img {
         display: none;
     }
@@ -30,6 +31,6 @@
     }
 
     .container {
-        padding-top: 0;
+        padding-top: 16px;
     }
 }

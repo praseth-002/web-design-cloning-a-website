@@ -24,30 +24,56 @@
   flex-direction: column;
   gap: 10px;
 }
+.allrob{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+ .horizonn{
+  border-left: 1px solid rgba(255, 255, 255, 0.178);
+  }
+.robehh{
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.robeuu{
+  width: 30px;
+  height: 30px;
+}
+.robeuu svg{
+  width: 100%;
+  height: 100%;
+  color: #999999;
+}
+.robpin{
+  width: 22px;
+  height: 22px;
+}
+.robpin svg{
+  width: 100%;
+  height: 100%;
+}
 #holder{
   background-color: rgba(128, 128, 128, 0.274);
   border-radius: 5px;
   padding: 10px 8px;
+  font-weight: bold;
+  color: white;
+ 
 }
-.allrob{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-  .rob{
+.rob{
     width: 30px;
     height: 30px;
+    color: #999999;
 }
 .rob svg{
     width: 100%;
     height: 100%;
-}
-a{
-  color: white;
-}
-.horizonn{
-  border-right: 1px solid rgba(255, 255, 255, 0.295);
-  margin-right: 18px;
 }
 .BoardItem_newDot__SKAU7 {
   display: inline-block;
@@ -62,10 +88,22 @@ a{
 .noticeinpic{
     font-size: 18px;
     padding-top: 5px;
-    font-weight: bold;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.997);
-  }
+    color: #999999;
+    
+}
+.noticeinpicnotice{
+  font-size: 18px;
+  padding-top: 5px;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.robnotice{
+  width: 30px;
+  height: 30px;
+  color: white;
+}
 .right-content {
     color: white;
     font-family: Arial, sans-serif;
@@ -242,4 +280,75 @@ ul{
     height: 100%;
     object-fit:cover;
   }
-  
+  .robitem {
+    width: 30px;
+    height: 30px;
+    color: #999999;
+  }
+  .robitem svg {
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (max-width: 800px) {
+    body {
+      width: 100%;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 6%;
+      
+    }
+    .left-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      box-sizing: content-box;
+      top: 0;
+     
+    }
+    .left-content > div {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      gap: 12px;
+      background-color: #151515;
+    }
+    .rob svg {
+      display: none;
+    }
+    .robnotice svg {
+      display: none;
+    }
+    .noticeinpicnotice {
+      width: 100%;
+      font-size: 15px;
+      padding-top: 5px;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      border-bottom: 1px solid #eeeeee;
+    }
+    #holder{
+      background-color: #151515;
+    }
+    .rob > svg> .muy{
+      color: #eeeeee;
+    }
+    .noticeinpic {
+      width: 100%;
+      font-size: 15px;
+      font-weight: bold;
+      padding-top: 5px;
+      justify-content: center;
+      color: #999999;
+    }
+    .BoardItem_newDot__SKAU7 {
+      display: none;
+    }
+  }
